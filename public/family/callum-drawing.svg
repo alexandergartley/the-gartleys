@@ -1,0 +1,11 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F4ECE0"/>
+  <rect x="76" y="72" width="1048" height="756" rx="36" fill="#F8F4EC" stroke="#D8CEC2"/>
+  <path d="M268 613C387 446 520 348 628 337C747 324 844 406 925 555" stroke="#7A6D5D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M348 547C451 449 512 398 628 396C744 394 815 444 890 530" stroke="#938170" stroke-width="5" stroke-linecap="round"/>
+  <path d="M369 259C431 222 486 204 560 196C636 188 727 202 818 258" stroke="#7A6D5D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M418 312C485 284 551 271 628 271C704 271 776 287 834 320" stroke="#938170" stroke-width="5" stroke-linecap="round"/>
+  <path d="M278 672C391 645 509 628 630 624C748 620 846 635 942 665" stroke="#B5A490" stroke-width="4" stroke-linecap="round"/>
+  <text x="132" y="160" fill="#675B4F" font-family="Georgia, serif" font-size="46">Callum sketchbook page</text>
+</svg>
+

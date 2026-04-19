@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F1E8DC"/>
+  <rect x="72" y="70" width="1056" height="760" rx="34" fill="#FBF7EF" stroke="#D7CCBE"/>
+  <path d="M173 194C237 182 310 183 381 190C454 197 535 203 625 195C712 187 807 184 916 202" stroke="#806F5C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M169 299C258 285 339 292 423 298C519 305 602 286 692 293C795 302 876 307 977 296" stroke="#806F5C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M174 405C258 390 343 397 428 403C506 409 606 390 700 398C786 405 890 409 975 402" stroke="#806F5C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M174 512C251 500 332 501 404 506C486 512 579 493 666 500C747 506 856 510 974 504" stroke="#806F5C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M176 619C241 608 318 605 399 611C486 617 580 600 666 608C753 616 847 621 974 613" stroke="#806F5C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M828 161C849 184 877 197 903 210C930 223 964 249 979 273" stroke="#B49E87" stroke-width="5" stroke-linecap="round"/>
+  <path d="M851 348C873 363 901 374 928 390C954 405 978 425 1000 453" stroke="#B49E87" stroke-width="5" stroke-linecap="round"/>
+  <text x="137" y="151" fill="#675B4F" font-family="Georgia, serif" font-size="46">Coda lyric page</text>
+</svg>
+
