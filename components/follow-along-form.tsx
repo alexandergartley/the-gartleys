@@ -7,7 +7,7 @@ import { followAlongCopy } from "@/content/site";
 
 type FollowAlongFormProps = {
   compact?: boolean;
-  variant?: "default" | "song";
+  variant?: "default" | "homepage" | "song";
 };
 
 export function FollowAlongForm({ compact = false, variant = "default" }: FollowAlongFormProps) {
@@ -48,8 +48,13 @@ export function FollowAlongForm({ compact = false, variant = "default" }: Follow
   }
 
   const isSongVariant = variant === "song";
-  const sectionClasses = compact ? "rounded-[1.8rem] p-5 sm:p-6" : "rounded-[2rem] p-6 sm:p-9";
-  const contentWidthClasses = compact ? "max-w-[34rem]" : "max-w-2xl";
+  const isHomepageVariant = variant === "homepage";
+  const sectionClasses = compact
+    ? "rounded-[1.8rem] p-5 sm:p-6"
+    : isHomepageVariant
+      ? "rounded-[2rem] p-6 sm:p-8"
+      : "rounded-[2rem] p-6 sm:p-9";
+  const contentWidthClasses = compact ? "max-w-[34rem]" : isHomepageVariant ? "max-w-[38rem]" : "max-w-2xl";
   const headingClasses = compact
     ? "mt-2 font-serif text-[2rem] leading-[1.02] sm:text-[2.35rem]"
     : "mt-3 font-serif text-3xl leading-tight sm:text-4xl";
@@ -58,7 +63,9 @@ export function FollowAlongForm({ compact = false, variant = "default" }: Follow
     : "mt-4 text-base leading-8 text-[var(--muted)] sm:text-[1.05rem]";
   const formClasses = compact
     ? "mt-6 grid gap-4 md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.18fr)_auto] md:gap-3"
-    : "mt-8 grid gap-5 md:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)_auto] md:gap-4";
+    : isHomepageVariant
+      ? "mt-5 grid gap-5 md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)_auto] md:items-end md:gap-4"
+      : "mt-8 grid gap-5 md:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)_auto] md:gap-4";
   const labelTextClasses = compact
     ? "mb-1.5 block text-[0.8rem] font-medium text-[var(--muted)]"
     : "mb-2 block text-sm font-medium text-[var(--muted)]";
@@ -68,13 +75,31 @@ export function FollowAlongForm({ compact = false, variant = "default" }: Follow
       className={`${sectionClasses} ${
         isSongVariant
           ? "border border-[rgba(77,67,55,0.18)] bg-[rgba(236,227,215,0.72)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.16)]"
+          : isHomepageVariant
+            ? "border border-[rgba(77,67,55,0.12)] bg-[rgba(236,227,215,0.58)] shadow-[0_12px_24px_rgba(47,42,37,0.04),inset_0_0_0_1px_rgba(255,255,255,0.15)]"
           : "soft-panel"
       }`}
     >
       <div className={contentWidthClasses}>
         {isSongVariant ? <p className="section-eyebrow">Keep Listening</p> : null}
-        <h2 className={headingClasses}>{followAlongCopy.title}</h2>
-        <p className={bodyClasses}>{followAlongCopy.body}</p>
+        {isHomepageVariant ? (
+          <>
+            <p className="section-eyebrow">Follow the Journey</p>
+            <h2 className={headingClasses}>Be the first to hear new songs and the stories behind them.</h2>
+            <p className={bodyClasses}>Shared as they&apos;re written, from our home and worship life.</p>
+            <p className="mt-1.5 text-sm leading-7 text-[var(--muted)]">
+              No noise. Just meaningful updates as they come.
+            </p>
+          </>
+        ) : (
+          <>
+            <h2 className={headingClasses}>{followAlongCopy.title}</h2>
+            <p className={bodyClasses}>{followAlongCopy.body}</p>
+          </>
+        )}
+        <p className={`${isHomepageVariant ? "mt-2" : "mt-3"} text-sm leading-7 text-[var(--muted)]`}>
+          After you sign up, Kit may send a confirmation email before you&apos;re fully subscribed.
+        </p>
       </div>
       <form className={formClasses} onSubmit={handleSubmit}>
         <label className="block">

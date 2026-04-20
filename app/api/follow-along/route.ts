@@ -43,6 +43,6 @@ export async function POST(request: Request) {
   }
 
   return NextResponse.json({
-    message: "You're in. We'll send new songs and stories as they come."
+    message: "Almost done. Check your email to confirm your subscription."
   });
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { JournalCard } from "@/components/journal-card";
+import { FollowAlongForm } from "@/components/follow-along-form";
 import { MediaEmbed } from "@/components/media-embed";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
@@ -120,6 +121,12 @@ export default async function HomePage() {
               />
             </div>
           </figure>
+        </div>
+      </section>
+
+      <section className="mt-20 sm:mt-24">
+        <div className="mx-auto max-w-[68rem]">
+          <FollowAlongForm variant="homepage" />
         </div>
       </section>
 

@@ -34,7 +34,7 @@ export async function POST(request: Request) {
 
   const { error } = await resend.emails.send({
     from,
-    to,
+    to: [to],
     replyTo: email,
     subject: `New booking inquiry from ${name}`,
     text: [
@@ -60,6 +60,7 @@ export async function POST(request: Request) {
   });
 
   if (error) {
+    console.error("Resend booking send failed", error);
     return errorResponse("We couldn't send your message right now. Please email us instead.", 502);
   }
 
