@@ -6,6 +6,8 @@ export const songs: Song[] = [
     slug: "jesus-over-everything",
     summary:
       "A song to lift His name above every fear, every battle, and every voice competing for our attention.",
+    descriptor: "A declaration song for moments when fear gets loud and Jesus needs to be named above it again.",
+    anchorLine: "Anchored in Revelation 12:11 and Isaiah 54:17.",
     themeSlugs: ["freedom", "worship", "trust"],
     releaseDate: "2025-07-26",
     coverImage: {
@@ -32,8 +34,7 @@ export const songs: Song[] = [
         href: "https://music.youtube.com/watch?v=ctMDuOTjmmE&si=tU-eQju8lTf_7kXE"
       }
     ],
-    lyrics: `INTRO
-I believe in the mighty name of Jesus
+    lyrics: `I believe in the mighty name of Jesus
 I believe there is victory when we shout out Your name
 I believe no weapon can stand against us
 You have won all authority, and it’s all in Your name
@@ -50,6 +51,12 @@ Your Spirit lives in me; You’ve won the victory
 
 We overcome by the word of our testimony
 It’s Jesus, it’s Jesus`,
+    aboutText:
+      "This song came out of a season where we needed to say what was true out loud. It became a way of lifting the name of Jesus over fear, spiritual pressure, and every voice trying to steal peace.",
+    storyText: [
+      "We didn't write it from a distance. We wrote it while needing courage ourselves - while remembering that victory doesn't start with our strength, but with what Jesus has already done.",
+      "Over time it became a declaration we could keep returning to: Jesus over every battle, every atmosphere, and every place where fear tries to take ground."
+    ],
     scriptureReferences: [
       {
         reference: "Revelation 12:11",
@@ -93,6 +100,8 @@ It’s Jesus, it’s Jesus`,
     slug: "tear-the-loaf",
     summary:
       "A table song written around remembrance - holding Jesus as the Bread of Life, His body given for us, and the open invitation of His salvation.",
+    descriptor: "A communion-table song about remembrance, provision, and coming back to Jesus again.",
+    anchorLine: "Anchored in John 6:35 and John 20:27.",
     themeSlugs: ["worship", "hope"],
     releaseDate: "2026-04-17",
     coverImage: {
@@ -130,6 +139,12 @@ I can tear the loaf again and again and again
 Trust the man that was crushed, who bled and died
 Who took up the cross, was crucified
 I can tear the loaf again and again and again`,
+    aboutText:
+      "This song started at the table - in the mystery of Jesus giving Himself for us and inviting us to come close again. We wanted it to feel simple, open, and full of remembrance.",
+    storyText: [
+      "What kept surfacing was that line of return: coming back to the Bread of Life, back to the place where need is met in Him. The song became less about explaining communion and more about staying near Jesus in it.",
+      "It also carries that tender invitation from the Gospel - Jesus meeting doubt, hunger, and need with His own wounded body and open welcome."
+    ],
     scriptureReferences: [
       {
         reference: "John 6:35",
@@ -187,6 +202,8 @@ I can tear the loaf again and again and again`,
     slug: "amazing-grace-hallelujah",
     summary:
       "A response to grace - simple, grateful, and centered on the new life we have in Jesus.",
+    descriptor: "A grateful freedom song for remembering what grace has done and who Jesus has made us now.",
+    anchorLine: "Anchored in Ephesians 2:4-5.",
     themeSlugs: ["freedom", "worship", "hope"],
     releaseDate: "2026-03-19",
     coverImage: {
@@ -235,6 +252,12 @@ Hallelujah
 
 Now I'm dancing in your freedom, you've broken every chain
 Hallelujah, hallelujah`,
+    aboutText:
+      "This song grew out of gratitude. We kept circling back to the mercy of Jesus - the way grace meets guilt, shame, and darkness, then calls us into real freedom.",
+    storyText: [
+      "It became a hallelujah song, but not a polished one. It was written from the joy of being pulled out of hiding and reminded again that new life in Jesus is not theoretical - it changes how we stand, sing, and live.",
+      "More than anything, this song is our way of remembering that what was lost in Adam has been restored in Christ, and that grace still has the final word."
+    ],
     scriptureReferences: [
       {
         reference: "Ephesians 2:4-5",
@@ -275,6 +298,8 @@ Hallelujah, hallelujah`,
     slug: "no-fear-in-the-son",
     summary:
       "Written in a season of pushing back fear - rooted in the Father's love and the finished work of Christ.",
+    descriptor: "A steadying song for naming fear, then answering it with the finished work of Jesus.",
+    anchorLine: "Anchored in 1 John 4:18.",
     themeSlugs: ["freedom", "trust"],
     releaseDate: "2026-04-03",
     coverImage: {
@@ -314,6 +339,12 @@ There is no fear in the Son
 There is no fear in His love
 There is no end to the blood
 Nothing it won't overcome`,
+    aboutText:
+      "This song was written in a season where fear needed to be confronted directly, not managed quietly. We kept returning to the Father's love and to what Jesus had already finished on our behalf.",
+    storyText: [
+      "It became a way of preaching truth back to ourselves: we are covered, welcomed, and no longer living under the rule of fear. The song holds that movement from anxiety into inheritance.",
+      "More than anything, it is a resting-place song - learning to stand in the Son instead of letting old fear define the room."
+    ],
     scriptureReferences: [
       {
         reference: "1 John 4:18",
@@ -338,6 +369,8 @@ Nothing it won't overcome`,
     slug: "we-make-space-for-you",
     summary:
       "A quiet prayer to surrender what doesn't belong and invite His presence to fill every part.",
+    descriptor: "A surrender song for clearing the room and asking Jesus to fill what remains.",
+    anchorLine: "Anchored in 2 Corinthians 7:1.",
     themeSlugs: ["surrender", "worship", "healing"],
     releaseDate: "2024-06-12",
     coverImage: {
@@ -419,6 +452,12 @@ Like a flood, would You come wash over us, Jesus?
 Oh, Jesus, come
 Jesus, come
 Oh my Jesus, come`,
+    aboutText:
+      "This song came from a desire to stop accommodating what didn't belong and make room again for the presence of Jesus. It is simple on purpose - more prayer than performance.",
+    storyText: [
+      "As we wrote it, the language kept coming in door-opening, house-clearing terms: fear, shame, control, pride, and every false thing being asked to leave. The song became an act of surrender before it became a recording.",
+      "It is really about consecration - making space in the inner life for what is holy, true, and alive in Him."
+    ],
     scriptureReferences: [
       {
         reference: "2 Corinthians 7:1",
@@ -444,6 +483,8 @@ Oh my Jesus, come`,
     slug: "paris",
     summary:
       "A tender moment of dreams being reshaped - learning to choose what matters most over what we thought life would be.",
+    descriptor: "A love song about surrendered expectations and the quiet beauty of choosing what matters most.",
+    anchorLine: "Anchored in Proverbs 16:9.",
     themeSlugs: ["trust", "hope"],
     releaseDate: "2023-06-03",
     coverImage: {
@@ -506,6 +547,12 @@ Sipping coffees while we’re talking can wait another day
 Sunrises over countrysides and fields that are in bloom can wait
 
 Can wait a year or two.`,
+    aboutText:
+      "This song grew out of a real disappointment, but it did not stay there. It became a tender way of recognizing that some dreams get rearranged when love, calling, and real life ask for something deeper.",
+    storyText: [
+      "What matters in the song is not missing Paris. It is realizing that beauty was still unfolding right where we were - in faithfulness, in love, and in the life God was actually giving us.",
+      "It became a small testimony that delayed dreams do not always mean diminished goodness. Sometimes they just make room for a different kind of joy."
+    ],
     scriptureReferences: [
       {
         reference: "Proverbs 16:9",
@@ -529,6 +576,8 @@ Can wait a year or two.`,
     slug: "mind-of-christ",
     summary:
       "Written in anxious days - a prayer for steadiness, clarity, and the peace that comes from Him.",
+    descriptor: "A prayer-song for anxious seasons when peace has to be received before it can be felt.",
+    anchorLine: "Anchored in Romans 8:6.",
     themeSlugs: ["trust", "freedom", "healing"],
     releaseDate: "2020-06-01",
     coverImage: {
@@ -635,6 +684,8 @@ Jesus, take hold of me`,
     slug: "new-mountain",
     summary:
       "A step of obedience into something new - trusting Jesus in the unknown.",
+    descriptor: "A transition song for leaving one mountain behind and saying yes to the next one with Jesus.",
+    anchorLine: "Anchored in Hebrews 12:1-2.",
     themeSlugs: ["calling", "trust", "worship"],
     releaseDate: "2020-04-19",
     coverImage: {
@@ -712,6 +763,10 @@ You’re always worth it, You’re always worth it, oh
 What else could be worth it? What else could be sweeter than You, sweeter than You?
 
 What else could be worth it? What else could be sweeter than You, sweeter than You?`,
+    storyText: [
+      "We wrote this while stepping into a new assignment and feeling both the excitement and cost of obedience. The song carries that strange moment of standing on one summit while already hearing Jesus call us onward.",
+      "It is a yes-in-the-unknown song - risk, transition, and the conviction that following Him is still worth it, even when the next mountain is not yet familiar."
+    ],
     scriptureReferences: [
       {
         reference: "Hebrews 12:1-2",
@@ -737,6 +792,8 @@ What else could be worth it? What else could be sweeter than You, sweeter than Y
     slug: "king-of-broken-things",
     summary:
       "A song for bringing what's broken to the Father - and trusting Him to redeem what we can't.",
+    descriptor: "A quiet offering for suffering seasons when the only honest thing left to bring is what hurts.",
+    anchorLine: "Anchored in Psalm 147:3.",
     themeSlugs: ["healing", "hope", "worship"],
     releaseDate: "2017-11-19",
     coverImage: {
@@ -774,6 +831,12 @@ Songs of hope and songs of faith help my heart to see His face
 
 Our hands are waiting to receive, our hearts wait in expectancy
 Brokenness our offering, redemption spilling over me`,
+    aboutText:
+      "This song was written from a place where words were hard to find and sorrow was easier to carry than explain. It makes room for bringing brokenness to God without dressing it up.",
+    storyText: [
+      "What emerged was not a quick answer song, but a redemption song - one that trusts Jesus does not waste suffering and can still receive what feels empty in us.",
+      "It became a way of singing with open hands: if all we have to bring is pain, we can still bring that to the King of broken things."
+    ],
     scriptureReferences: [
       {
         reference: "Psalm 147:3",
@@ -799,6 +862,8 @@ Brokenness our offering, redemption spilling over me`,
     slug: "cry-out-to-you",
     summary:
       "A valley song - when the only right response is to cry out and hold onto Him.",
+    descriptor: "A prayer from the valley for the moments when peace feels far away but God is still the Rock.",
+    anchorLine: "Anchored in Psalm 61:2.",
     themeSlugs: ["trust", "hope", "healing"],
     releaseDate: "2017-10-06",
     coverImage: {
@@ -834,6 +899,12 @@ I cry out to You, I cry out to You
 
 Be still, my heart, for He is your God
 Be still and know that He is your God`,
+    aboutText:
+      "This song came from a valley season where the next faithful thing was simply to cry out. It is not written from the other side of struggle, but from inside the need for God to steady the heart.",
+    storyText: [
+      "The image underneath it is simple: fear in the chest, a long road ahead, and God still being the Rock higher than we can reach on our own. The song became a first-step prayer.",
+      "It gives language to the moment when strength is thin but trust is still possible - not because the valley is small, but because He is faithful in it."
+    ],
     scriptureReferences: [
       {
         reference: "Psalm 61:2",
@@ -859,6 +930,8 @@ Be still and know that He is your God`,
     slug: "get-ready",
     summary:
       "Written in a season of letting go - making space for what God is doing next.",
+    descriptor: "A wilderness song about release, readiness, and trusting that God is already making a way.",
+    anchorLine: "Anchored in Isaiah 43:18-19.",
     themeSlugs: ["calling", "surrender", "hope"],
     releaseDate: "2024-11-17",
     coverImage: {
@@ -900,6 +973,12 @@ Come and have Your way
 Come and have Your way
 Come and have Your way
 Come and have Your way`,
+    aboutText:
+      "This song started as a letting-go prayer. It came from that in-between place where an old season is closing, the new one is not fully visible yet, and God keeps asking for trust.",
+    storyText: [
+      "The language of wilderness and readiness kept surfacing as we wrote. It became a way of agreeing with God before we could see the whole road - letting the past loosen its grip and making room for what He was doing next.",
+      "More than anything, it is a posture song: hands open, heart yielded, and a simple yes to His timing."
+    ],
     scriptureReferences: [
       {
         reference: "Isaiah 43:18-19",

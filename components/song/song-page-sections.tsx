@@ -121,6 +121,7 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
       ?.map((slug) => getThemeBySlug(slug))
       .filter((theme): theme is NonNullable<typeof theme> => Boolean(theme)) ?? [];
   const platformLinks = song.streamingLinks.filter((link) => link.label !== "YouTube");
+  const hasStoryIntro = Boolean(song.aboutText || song.storyText?.length || song.anchorLine);
 
   return (
     <div className="relative isolate space-y-14 pt-12 sm:pt-16">
@@ -157,11 +158,21 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-xl">
               {song.summary}
             </p>
+            {song.descriptor ? (
+              <p className="mt-5 max-w-2xl font-serif text-2xl leading-relaxed text-[var(--foreground)] sm:text-[2rem]">
+                {song.descriptor}
+              </p>
+            ) : null}
             <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-[var(--muted)]">
               <span>Released {formatDate(song.releaseDate)}</span>
               <span className="hidden h-1 w-1 rounded-full bg-[var(--border)] sm:block" />
               <span>Acoustic worship / family recording</span>
             </div>
+            {song.anchorLine ? (
+              <div className="mt-6 inline-flex max-w-xl rounded-full border border-[var(--border)] bg-[rgba(255,255,255,0.46)] px-4 py-2 text-sm leading-6 text-[var(--muted)]">
+                {song.anchorLine}
+              </div>
+            ) : null}
             {resolvedThemes.length ? (
               <div className="mt-6 flex flex-wrap gap-2.5">
                 {resolvedThemes.map((theme) => (
@@ -217,10 +228,13 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
         <MediaEmbed title={`${song.title} media`} url={song.mediaEmbedUrl} audio={song.mediaAudio} />
       </SongSection>
 
-      {song.aboutText ? (
-        <SongSection title="About This Song">
+      {hasStoryIntro ? (
+        <SongSection title="Behind This Song">
           <div className="reading-width prose-gartley">
-            <p>{song.aboutText}</p>
+            {song.aboutText ? <p>{song.aboutText}</p> : null}
+            {song.storyText?.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
         </SongSection>
       ) : null}
@@ -229,16 +243,6 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
         <SongSection title="Lyrics">
           <div className="soft-panel rounded-[1.75rem] p-6 sm:p-8">
             <div className="song-lyrics reading-width">{song.lyrics}</div>
-          </div>
-        </SongSection>
-      ) : null}
-
-      {song.storyText?.length ? (
-        <SongSection title="Behind the Song">
-          <div className="reading-width prose-gartley">
-            {song.storyText.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
           </div>
         </SongSection>
       ) : null}

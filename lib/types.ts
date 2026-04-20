@@ -37,6 +37,8 @@ export type Song = {
   title: string;
   slug: string;
   summary: string;
+  descriptor?: string;
+  anchorLine?: string;
   themeSlugs?: string[];
   releaseDate: string;
   coverImage?: NoteImage;
