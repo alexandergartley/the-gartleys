@@ -289,10 +289,16 @@ Hallelujah, hallelujah`,
       "Father, thank You for calling us out of darkness and into the freedom of Your Son. Let the grace of Jesus go deeper in us than fear, shame, or accusation, and teach us to live like people who have truly been washed, restored, and made alive by Your love. Hallelujah. Amen.",
     timeline: [
       {
-        label: "Release day",
+        label: "Live version",
         date: "2026-03-19",
         description:
-          "Released as a song of freedom and gratitude, pointing to the grace of Jesus that brings us out of darkness and into life."
+          "Recorded live and released on YouTube as a song of freedom and gratitude, pointing to the grace of Jesus that brings us out of darkness and into life."
+      },
+      {
+        label: "Release day",
+        date: "2026-04-30",
+        description:
+          "Released on streaming platforms as a fuller invitation to remember the grace of Jesus and respond with hallelujah."
       }
     ],
     featured: true
