@@ -218,6 +218,10 @@ I can tear the loaf again and again and again`,
         href: "https://open.spotify.com/track/4CPL2jss7rVU4feAm4Guif?si=e2d4af8cc1fa401a"
       },
       {
+        label: "Amazon Music",
+        href: "https://amazon.com/music/player/albums/B0GZ3VDBZM?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_c2fIDz8yCELFEcN7RFWjAWWYn&trackAsin=B0GZ46S9WS"
+      },
+      {
         label: "YouTube",
         href: "https://www.youtube.com/watch?v=NsDT2IPlTgc"
       }
