@@ -214,6 +214,10 @@ I can tear the loaf again and again and again`,
     mediaEmbedUrl: "https://www.youtube-nocookie.com/embed/NsDT2IPlTgc",
     streamingLinks: [
       {
+        label: "Spotify",
+        href: "https://open.spotify.com/track/4CPL2jss7rVU4feAm4Guif?si=e2d4af8cc1fa401a"
+      },
+      {
         label: "YouTube",
         href: "https://www.youtube.com/watch?v=NsDT2IPlTgc"
       }
