@@ -940,6 +940,93 @@ Be still and know that He is your God`,
       "God, Rock of our salvation, when fear rises in us and the valley feels long, teach us to cry out to You instead of giving in to despair. Steady our hearts, lift our eyes, and lead us again to the place where Your peace is stronger than our fear. Be our strength in the valley and our reward through every step. Amen."
   },
   {
+    title: "We Will Wait",
+    slug: "we-will-wait",
+    summary:
+      "A patient worship song about blessing the name of Jesus in the waiting, whether on the mountain or in the valley, and trusting Him as chains come undone.",
+    descriptor:
+      "A live-only worship song for the waiting place, where patience becomes praise and freedom begins to rise.",
+    anchorLine: "Anchored in Psalm 27:14 and Acts 16:25-26.",
+    themeSlugs: ["trust", "worship", "freedom"],
+    releaseDate: "2026-05-15",
+    coverImage: {
+      src: "/covers/we-will-wait.jpg",
+      alt: "We Will Wait artwork showing broken chains in a shaft of light",
+      caption: "Single artwork"
+    },
+    mediaEmbedUrl: "https://www.youtube-nocookie.com/embed/fVdWAwFhjZM",
+    streamingLinks: [
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/watch?v=fVdWAwFhjZM"
+      }
+    ],
+    lyrics: `We will wait patiently for You
+In this moment, we'll bless Your holy name
+
+We will wait patiently for You
+In this moment, we'll bless Your holy name
+
+We will wait patiently for You
+On this mountain, we'll bless Your holy name
+
+We will wait patiently for You
+In this valley, we'll bless Your holy name
+
+Singing holy, holy, holy is Your name
+Singing holy, holy, holy is Your name, Jesus
+
+Singing holy, holy, holy is Your name, Jesus
+Singing holy, holy, holy is Your name
+
+And these shackles and chains are coming undone
+As we lift our hands to You
+And our hearts and our hands are coming unchained
+As we bless Your holy name`,
+    aboutText:
+      "We Will Wait is built around a quiet act of worship: choosing to bless the name of Jesus while waiting.",
+    storyText: [
+      "The song moves through both mountain and valley language, holding together joy, hardship, patience, and surrender.",
+      "Its final turn names the freedom that comes as worship rises: shackles and chains coming undone, hearts and hands being unchained before God."
+    ],
+    scriptureReferences: [
+      {
+        reference: "Psalm 27:14",
+        passage: "Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!",
+        reflection:
+          "This song stays in the waiting place without going silent - choosing courage, patience, and worship before the answer is visible."
+      },
+      {
+        reference: "Acts 16:25-26",
+        passage:
+          "About midnight Paul and Silas were praying and singing hymns to God... and everyone's chains came loose.",
+        reflection:
+          "The image of chains coming undone echoes the freedom that can break in when worship rises from a confined place."
+      }
+    ],
+    timeline: [
+      {
+        label: "Demo released",
+        date: "2013-11-05",
+        description:
+          "A simple demo recording preserved from the early life of the song, before the page's live-video version became the main way to hear it.",
+        audio: {
+          src: "/demos/we-will-wait-demo.mp3",
+          type: "audio/mpeg",
+          caption: "Demo recording released on November 5, 2013."
+        }
+      },
+      {
+        label: "Live video",
+        date: "2013-11-05",
+        description:
+          "Shared as a live-only song, with the YouTube performance carrying the worship moment forward."
+      }
+    ],
+    reflectionText:
+      "Jesus, teach us to wait with worship. On the mountain and in the valley, help us bless Your holy name. Where we feel bound by fear, striving, or weariness, meet us with Your freedom. Unchain our hearts and lift our hands again in trust. Amen."
+  },
+  {
     title: "Get Ready",
     slug: "get-ready",
     summary:
