@@ -38,10 +38,10 @@ export function CoverArtLightbox({ src, alt, caption }: CoverArtLightboxProps) {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="group block w-full cursor-pointer text-left"
+        className="group block w-full cursor-zoom-in rounded-[0.75rem] text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(77,67,55,0.32)] focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
         aria-label={`Open larger view of ${alt}`}
       >
-        <div className="overflow-hidden rounded-[1.25rem] border border-[var(--border)] bg-[var(--surface)]">
+        <div className="overflow-hidden rounded-[0.75rem] bg-[var(--surface)] shadow-[0_18px_36px_rgba(47,42,37,0.16)] transition duration-200 group-hover:-translate-y-0.5 group-hover:shadow-[0_22px_44px_rgba(47,42,37,0.2)]">
           <Image
             src={src}
             alt={alt}

@@ -144,7 +144,7 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
         <div
           className={
             song.coverImage
-              ? "grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start"
+              ? "grid gap-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start"
               : "grid gap-8 lg:grid-cols-[minmax(0,1fr)_14rem] lg:items-start"
           }
         >
@@ -198,17 +198,12 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
             </div>
           </div>
           {song.coverImage ? (
-            <figure className="soft-panel w-full max-w-[18rem] rotate-[2deg] rounded-[1.75rem] p-3 lg:justify-self-end">
+            <figure className="w-full max-w-[18rem] rotate-[1.5deg] pt-1 sm:max-w-[20rem] lg:justify-self-end">
               <CoverArtLightbox
                 src={song.coverImage.src}
                 alt={song.coverImage.alt}
                 caption={song.coverImage.caption}
               />
-              {song.coverImage.caption ? (
-                <figcaption className="mt-4 text-sm leading-7 text-[var(--muted)]">
-                  {song.coverImage.caption} · Click to enlarge
-                </figcaption>
-              ) : null}
             </figure>
           ) : (
             <aside className="hidden lg:block lg:justify-self-end">

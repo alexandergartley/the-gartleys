@@ -277,16 +277,10 @@ Hallelujah, hallelujah`,
     ],
     notesImages: [
       {
-        src: "/notes/amazing-grace-lyrics-020723.jpg",
-        alt: "Handwritten early lyric page for Amazing Grace (Hallelujah)",
-        caption:
-          "A handwritten lyric page from February 2023, when the first lines of the song were beginning to take shape."
-      },
-      {
         src: "/notes/amazing-grace-lyrics-in-progress.jpeg",
         alt: "Original handwritten lyrics in progress for Amazing Grace (Hallelujah)",
         caption:
-          "An original notebook draft with in-progress lines and revisions from the writing process."
+          "A handwritten lyric page from February 2023, when the first lines of the song were beginning to take shape."
       }
     ],
     reflectionText:
