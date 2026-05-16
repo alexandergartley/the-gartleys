@@ -36,7 +36,8 @@ export function JournalCard({
   isFirst = false,
   variant = "archive"
 }: JournalCardProps) {
-  const [month, day, year] = formatDate(entry.date).replace(",", "").split(" ");
+  const formattedDate = formatDate(entry.date);
+  const [month, day, year] = formattedDate.replace(",", "").split(" ");
   const image = journalCardImages[entry.slug];
   const isHomepage = variant === "homepage";
 
@@ -68,13 +69,9 @@ export function JournalCard({
               </figure>
             </Link>
           ) : null}
-          <div className="mt-4 text-sm uppercase tracking-[0.12em] text-[var(--muted)]">
-            <span>{month}</span>
-            <span className="mx-2">·</span>
-            <span>{day}</span>
-            <span className="mx-2">·</span>
-            <span>{year}</span>
-          </div>
+          <p className="mt-4 text-base tracking-[0.08em] text-[var(--foreground)]">
+            {formattedDate}
+          </p>
           <h2 className="mt-3 font-serif text-[2rem] leading-tight sm:text-[1.9rem]">
             <Link
               href={`/journal/${entry.slug}`}
