@@ -337,7 +337,7 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   .page-container {
-    width: min(100% - 1.1rem, 73rem);
+    width: min(100% - 3rem, 73rem);
   }
 
   .prose-gartley {
