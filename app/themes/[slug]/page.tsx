@@ -92,9 +92,6 @@ export default async function ThemePage({ params }: ThemePageProps) {
         <p className="section-eyebrow">Theme</p>
         <h1 className="mt-4 font-serif text-5xl leading-none sm:text-7xl">{theme.label}</h1>
         <p className="mt-6 max-w-4xl text-lg leading-8 text-[var(--muted)]">{theme.intro}</p>
-        <div className="mt-6">
-          <ThemeChip slug={theme.slug} label={theme.label} />
-        </div>
       </section>
 
       <section className="mt-10">
@@ -125,7 +122,7 @@ export default async function ThemePage({ params }: ThemePageProps) {
 
       {relatedThemes.length ? (
         <section className="mt-10 rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.45)] p-6 sm:p-7">
-          <h2 className="font-serif text-3xl leading-tight sm:text-4xl">Often connected</h2>
+          <h2 className="font-serif text-3xl leading-tight sm:text-4xl">Related themes</h2>
           <div className="mt-5 flex flex-wrap gap-2.5">
             {relatedThemes.map((related) => (
               <ThemeChip key={related.slug} slug={related.slug} label={related.label} />
