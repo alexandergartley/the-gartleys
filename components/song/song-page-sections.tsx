@@ -158,11 +158,6 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)] sm:text-xl">
               {song.summary}
             </p>
-            {song.descriptor ? (
-              <p className="mt-5 max-w-2xl font-serif text-2xl leading-relaxed text-[var(--foreground)] sm:text-[2rem]">
-                {song.descriptor}
-              </p>
-            ) : null}
             <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-[var(--muted)]">
               <span>Released {formatDate(song.releaseDate)}</span>
               <span className="hidden h-1 w-1 rounded-full bg-[var(--border)] sm:block" />
