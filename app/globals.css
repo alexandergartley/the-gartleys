@@ -285,12 +285,17 @@ img {
   font-size: 0.96rem;
   line-height: 1.1;
   font-weight: 600;
+  cursor: pointer;
   transition: background-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
 }
 
 .button-primary:hover {
   background: #47473c;
   box-shadow: 0 8px 20px rgba(47, 42, 37, 0.18);
+}
+
+.button-primary:disabled {
+  cursor: not-allowed;
 }
 
 .button-secondary {
