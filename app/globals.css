@@ -340,8 +340,12 @@ button:focus-visible {
     width: min(100% - 3rem, 73rem);
   }
 
+  p.text-base {
+    font-size: 1.0625rem;
+  }
+
   .prose-gartley {
-    font-size: 0.99rem;
-    line-height: 1.75;
+    font-size: 1.05rem;
+    line-height: 1.8;
   }
 }
