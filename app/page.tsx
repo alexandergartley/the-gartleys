@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { JournalCard } from "@/components/journal-card";
 import { FollowAlongForm } from "@/components/follow-along-form";
+import { LiveWorshipCallout } from "@/components/live-worship-callout";
 import { MediaEmbed } from "@/components/media-embed";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
@@ -84,6 +85,8 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      <LiveWorshipCallout />
 
       <section className="mt-24">
         <SectionHeading

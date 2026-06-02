@@ -1,3 +1,4 @@
+import { LiveWorshipCallout } from "@/components/live-worship-callout";
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { SongCard } from "@/components/song/song-card";
@@ -32,6 +33,9 @@ export default function MusicPage() {
           ))}
         </div>
       </section>
+      <div className="mt-10">
+        <LiveWorshipCallout variant="compact" />
+      </div>
       <div className="mt-10 grid gap-6">
         {sortedSongs.map((song) => (
           <SongCard key={song.slug} song={song} />
