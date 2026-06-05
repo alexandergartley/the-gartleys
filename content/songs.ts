@@ -222,8 +222,8 @@ I can tear the loaf again and again and again`,
     lyrics: `I trust you, Jesus. You will work it out
 All I know is I will lay it down
 
-‘Cause Your yoke is ea - sy, Your burden is light
-Your yoke is ea - sy, Your burden is light
+‘Cause Your yoke is easy, Your burden is light
+Your yoke is easy, Your burden is light
 
 And I trust Your Word to light up my path
 And I trust your heart to guide me
