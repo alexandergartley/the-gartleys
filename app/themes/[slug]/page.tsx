@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { PageShell } from "@/components/page-shell";
@@ -10,14 +11,6 @@ import { buildPageMetadata } from "@/lib/seo";
 
 type ThemePageProps = {
   params: Promise<{ slug: string }>;
-};
-
-type ScriptureEcho = {
-  reference: string;
-  passage?: string;
-  reflection: string;
-  songTitle: string;
-  songSlug: string;
 };
 
 export async function generateStaticParams() {
@@ -51,24 +44,6 @@ export default async function ThemePage({ params }: ThemePageProps) {
     .filter((song) => song.themeSlugs?.includes(theme.slug))
     .sort((left, right) => +new Date(right.releaseDate) - +new Date(left.releaseDate));
 
-  const scriptureEchoes = themedSongs.reduce<ScriptureEcho[]>((acc, song) => {
-    if (!song.scriptureReferences?.length) {
-      return acc;
-    }
-
-    song.scriptureReferences.forEach((item) => {
-      acc.push({
-        reference: item.reference,
-        passage: item.passage,
-        reflection: item.reflection,
-        songTitle: song.title,
-        songSlug: song.slug
-      });
-    });
-
-    return acc;
-  }, []);
-
   const relatedThemes = songThemes
     .filter((candidate) => candidate.slug !== theme.slug)
     .map((candidate) => {
@@ -88,6 +63,22 @@ export default async function ThemePage({ params }: ThemePageProps) {
 
   return (
     <PageShell className="py-12 sm:py-20">
+      <nav aria-label="Breadcrumb" className="mb-5 text-sm text-[var(--muted)]">
+        <ol className="flex flex-wrap items-center gap-2">
+          <li>
+            <Link href="/music" className="transition-colors hover:text-[var(--foreground)]">
+              Music
+            </Link>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li>Themes</li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page" className="text-[var(--foreground)]">
+            {theme.label}
+          </li>
+        </ol>
+      </nav>
+
       <section className="soft-panel rounded-[2rem] px-6 py-8 sm:px-10 sm:py-10">
         <p className="section-eyebrow">Theme</p>
         <h1 className="mt-4 font-serif text-5xl leading-none sm:text-7xl">{theme.label}</h1>
@@ -126,30 +117,6 @@ export default async function ThemePage({ params }: ThemePageProps) {
           <div className="mt-5 flex flex-wrap gap-2.5">
             {relatedThemes.map((related) => (
               <ThemeChip key={related.slug} slug={related.slug} label={related.label} />
-            ))}
-          </div>
-        </section>
-      ) : null}
-
-      {scriptureEchoes.length ? (
-        <section className="mt-10">
-          <h2 className="font-serif text-3xl leading-tight sm:text-4xl">Where these songs come from</h2>
-          <div className="mt-6 grid gap-5">
-            {scriptureEchoes.map((item) => (
-              <article
-                key={`${item.songSlug}-${item.reference}`}
-                className="rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.42)] p-6 sm:p-7"
-              >
-                <p className="section-eyebrow">
-                  {item.reference} · {item.songTitle}
-                </p>
-                {item.passage ? (
-                  <p className="mt-3 font-serif text-2xl leading-relaxed">{item.passage}</p>
-                ) : null}
-                <p className="mt-4 max-w-3xl text-base leading-7 text-[var(--muted)]">
-                  {item.reflection}
-                </p>
-              </article>
             ))}
           </div>
         </section>

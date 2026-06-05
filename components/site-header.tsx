@@ -4,8 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 
+import { liveWorshipSeries } from "@/content/live-worship";
 import { siteConfig } from "@/content/site";
 import { PageShell } from "@/components/page-shell";
+
+const musicNavigation = [
+  { href: "/music#songs", label: "Songs" },
+  { href: liveWorshipSeries.playlistUrl, label: "Live Worship Sessions" },
+  { href: "/music#themes", label: "Themes" }
+] as const;
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -22,7 +29,9 @@ export function SiteHeader() {
     }
 
     if (href === "/music") {
-      return pathname === "/music" || pathname.startsWith("/songs/");
+      return (
+        pathname === "/music" || pathname.startsWith("/songs/") || pathname.startsWith("/themes/")
+      );
     }
 
     if (href === "/journal") {
@@ -80,19 +89,49 @@ export function SiteHeader() {
         >
           <ul className="grid gap-2 rounded-2xl border border-[color:var(--border)] bg-[rgba(255,255,255,0.42)] p-2 text-sm text-[var(--muted)] md:flex md:flex-wrap md:gap-x-3 md:gap-y-2.5 md:border-0 md:bg-transparent md:p-0">
             {siteConfig.navigation.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  aria-current={isActive(item.href) ? "page" : undefined}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`flex rounded-xl px-3.5 py-2.5 transition-colors duration-150 md:inline-flex md:rounded-full md:py-2 ${
-                    isActive(item.href)
-                      ? "bg-[var(--surface)] text-[var(--foreground)] shadow-[inset_0_0_0_1px_var(--border)]"
-                      : "hover:bg-[rgba(255,255,255,0.56)] hover:text-[var(--foreground)]"
-                  }`}
-                >
-                  {item.label}
-                </Link>
+              <li key={item.href} className={item.href === "/music" ? "group relative" : undefined}>
+                {item.href === "/music" ? (
+                  <>
+                    <Link
+                      href={item.href}
+                      aria-current={isActive(item.href) ? "page" : undefined}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`flex rounded-xl px-3.5 py-2.5 transition-colors duration-150 md:inline-flex md:rounded-full md:py-2 ${
+                        isActive(item.href)
+                          ? "bg-[var(--surface)] text-[var(--foreground)] shadow-[inset_0_0_0_1px_var(--border)]"
+                          : "hover:bg-[rgba(255,255,255,0.56)] hover:text-[var(--foreground)]"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                    <ul className="mt-1 grid gap-1 pl-3 md:invisible md:absolute md:left-0 md:top-full md:z-20 md:mt-2 md:min-w-56 md:pointer-events-none md:rounded-2xl md:border md:border-[var(--border)] md:bg-[rgba(255,255,255,0.94)] md:p-2 md:pl-2 md:opacity-0 md:shadow-sm md:transition md:duration-150 md:group-hover:visible md:group-hover:pointer-events-auto md:group-hover:opacity-100 md:group-focus-within:visible md:group-focus-within:pointer-events-auto md:group-focus-within:opacity-100">
+                      {musicNavigation.map((musicItem) => (
+                        <li key={musicItem.href}>
+                          <Link
+                            href={musicItem.href}
+                            onClick={() => setIsMenuOpen(false)}
+                            className="flex rounded-xl px-3.5 py-2 text-sm transition-colors duration-150 hover:bg-[rgba(255,255,255,0.64)] hover:text-[var(--foreground)]"
+                          >
+                            {musicItem.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    aria-current={isActive(item.href) ? "page" : undefined}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`flex rounded-xl px-3.5 py-2.5 transition-colors duration-150 md:inline-flex md:rounded-full md:py-2 ${
+                      isActive(item.href)
+                        ? "bg-[var(--surface)] text-[var(--foreground)] shadow-[inset_0_0_0_1px_var(--border)]"
+                        : "hover:bg-[rgba(255,255,255,0.56)] hover:text-[var(--foreground)]"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

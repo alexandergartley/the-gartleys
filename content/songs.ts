@@ -198,6 +198,86 @@ I can tear the loaf again and again and again`,
       "Jesus, Bread of Life, thank You for giving Your body and blood for us and for opening the table wide. Feed what is hungry in us, steady our faith in Your finished work, and teach us to come again and again to the place where every need is satisfied in You. Amen."
   },
   {
+    title: "Your Yoke Is Easy",
+    slug: "your-yoke-is-easy",
+    summary:
+      "A quiet surrender song about laying down the weight we were never meant to carry and trusting Jesus to lead the way.",
+    descriptor:
+      "A trust song for releasing control, receiving the gentle way of Jesus, and learning again to obey.",
+    anchorLine: "Anchored in Matthew 11:28-30.",
+    themeSlugs: ["trust", "surrender"],
+    releaseDate: "2026-06-05",
+    coverImage: {
+      src: "/covers/your-yoke-is-easy.jpg",
+      alt: "Your Yoke Is Easy single artwork with soft clouds and handwritten title text",
+      caption: "Single artwork"
+    },
+    mediaEmbedUrl: "https://www.youtube-nocookie.com/embed/BewNv7lelZE",
+    streamingLinks: [
+      {
+        label: "YouTube",
+        href: "https://www.youtube.com/watch?v=BewNv7lelZE"
+      }
+    ],
+    lyrics: `I trust you, Jesus. You will work it out
+All I know is I will lay it down
+
+‘Cause Your yoke is ea - sy, Your burden is light
+Your yoke is ea - sy, Your burden is light
+
+And I trust Your Word to light up my path
+And I trust your heart to guide me
+
+Though my heart wants to stray
+I will yield to Your way
+You will teach me to trust and obey`,
+    aboutText:
+      "This song is a simple prayer of release. It names the moment when we do not know how everything will work out, but we know enough to lay the weight down and trust Jesus with the way forward.",
+    storyText: [
+      "The center of the song is not striving to be stronger. It is coming under the gentle leadership of Jesus - trusting His Word for the next step and His heart for the direction.",
+      "Even the final lines hold that honest tension: the heart still wants to wander, but surrender is still possible. The song becomes a small act of obedience, asking Jesus to teach us how to trust Him again."
+    ],
+    scriptureReferences: [
+      {
+        reference: "Matthew 11:28-30",
+        passage:
+          "Come to me, all you who are weary and burdened, and I will give you rest... For my yoke is easy and my burden is light.",
+        reflection:
+          "This is the song's resting place - laying down heavy striving and receiving the gentle way of Jesus."
+      },
+      {
+        reference: "Psalm 119:105",
+        passage: "Your word is a lamp for my feet, a light on my path.",
+        reflection:
+          "The song trusts God's Word for the next step, even when the full road is not visible yet."
+      },
+      {
+        reference: "Proverbs 3:5-6",
+        passage:
+          "Trust in the Lord with all your heart and lean not on your own understanding... and he will make your paths straight.",
+        reflection:
+          "This is the surrender underneath the lyric - yielding our way to His wisdom and letting Him guide the path."
+      }
+    ],
+    timeline: [
+      {
+        label: "Release day",
+        date: "2026-06-05",
+        description:
+          "Released as a prayer of trust and surrender, inviting weary hearts to lay down what they cannot carry and follow the gentle way of Jesus."
+      }
+    ],
+    notesImages: [
+      {
+        src: "/notes/your-yoke-is-easy-lyrics-and-chords.jpeg",
+        alt: "Printed lyrics and chords for Your Yoke Is Easy",
+        caption: "A simple lyric and chord sheet for Your Yoke Is Easy."
+      }
+    ],
+    reflectionText:
+      "Jesus, we lay down what we cannot carry and trust You to work out what we cannot control. Let Your Word light the path in front of us, and let Your heart lead us when ours wants to stray. Teach us to yield to Your way, to receive Your rest, and to obey from a place of trust. Amen."
+  },
+  {
     title: "Amazing Grace (Hallelujah)",
     slug: "amazing-grace-hallelujah",
     summary:

@@ -26,7 +26,7 @@ export default function MusicPage() {
         title="Songs, one at a time"
         description="Each song holds a moment - the music, the story behind it, and the Scripture that shaped it."
       />
-      <section className="mt-8">
+      <section id="themes" className="mt-8 scroll-mt-24">
         <div className="flex flex-wrap gap-2.5">
           {songThemes.map((theme) => (
             <ThemeChip key={theme.slug} slug={theme.slug} label={theme.label} />
@@ -36,7 +36,7 @@ export default function MusicPage() {
       <div className="mt-10">
         <LiveWorshipCallout variant="compact" />
       </div>
-      <div className="mt-10 grid gap-6">
+      <div id="songs" className="mt-10 grid scroll-mt-24 gap-6">
         {sortedSongs.map((song) => (
           <SongCard key={song.slug} song={song} />
         ))}
