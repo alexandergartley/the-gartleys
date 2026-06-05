@@ -104,7 +104,7 @@ export function SiteHeader() {
                     >
                       {item.label}
                     </Link>
-                    <ul className="mt-1 grid gap-1 pl-3 md:invisible md:absolute md:left-0 md:top-full md:z-20 md:mt-2 md:min-w-56 md:pointer-events-none md:rounded-2xl md:border md:border-[var(--border)] md:bg-[rgba(255,255,255,0.94)] md:p-2 md:pl-2 md:opacity-0 md:shadow-sm md:transition md:duration-150 md:group-hover:visible md:group-hover:pointer-events-auto md:group-hover:opacity-100 md:group-focus-within:visible md:group-focus-within:pointer-events-auto md:group-focus-within:opacity-100">
+                    <ul className="mt-1 grid gap-1 pl-3 md:invisible md:absolute md:left-0 md:top-full md:z-20 md:mt-0 md:min-w-56 md:pointer-events-none md:rounded-2xl md:border md:border-[var(--border)] md:bg-[rgba(255,255,255,0.94)] md:p-2 md:pt-4 md:pl-2 md:opacity-0 md:shadow-sm md:transition md:duration-150 md:group-hover:visible md:group-hover:pointer-events-auto md:group-hover:opacity-100 md:group-focus-within:visible md:group-focus-within:pointer-events-auto md:group-focus-within:opacity-100">
                       {musicNavigation.map((musicItem) => (
                         <li key={musicItem.href}>
                           <Link
