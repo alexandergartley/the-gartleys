@@ -9,9 +9,9 @@ import { siteConfig } from "@/content/site";
 import { PageShell } from "@/components/page-shell";
 
 const musicNavigation = [
-  { href: "/music#songs", label: "Songs" },
+  { href: "/music#songs", label: "Songs", isExternal: false },
   { href: liveWorshipSeries.playlistUrl, label: "Live Worship Sessions", isExternal: true },
-  { href: "/music#themes", label: "Themes" }
+  { href: "/music#themes", label: "Themes", isExternal: false }
 ] as const;
 
 const primaryNavigation = siteConfig.navigation.filter((item) => item.href !== "/");
