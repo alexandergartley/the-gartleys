@@ -5,23 +5,7 @@ export const familyMembers: FamilyMember[] = [
     name: "Callum",
     intro:
       "The kinds of contributions that don't draw attention, but shape everything. Callum brings a quiet steadiness to the songs. Sometimes it's a small harmony. Sometimes it's a sketch in the margins. Sometimes it's a question that shifts how we hear a lyric.",
-    features: [
-      {
-        title: "Living room harmony takes",
-        description:
-          "Short recordings that keep the songs feeling like home instead of performance."
-      },
-      {
-        title: "Notebook drawings",
-        description:
-          "Small drawings and lyric fragments that carry the same honesty as the music.",
-        image: {
-          src: "/family/callum-drawing.svg",
-          alt: "Child's worship-inspired notebook drawing from The Gartleys family songwriting scrapbook",
-          caption: "A page from the family scrapbook."
-        }
-      }
-    ]
+    features: []
   },
   {
     name: "Coda",

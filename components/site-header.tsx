@@ -10,9 +10,11 @@ import { PageShell } from "@/components/page-shell";
 
 const musicNavigation = [
   { href: "/music#songs", label: "Songs" },
-  { href: liveWorshipSeries.playlistUrl, label: "Live Worship Sessions" },
+  { href: liveWorshipSeries.playlistUrl, label: "Live Worship Sessions", isExternal: true },
   { href: "/music#themes", label: "Themes" }
 ] as const;
+
+const primaryNavigation = siteConfig.navigation.filter((item) => item.href !== "/");
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -88,7 +90,7 @@ export function SiteHeader() {
           className={`${isMenuOpen ? "block" : "hidden"} mt-5 md:mt-0 md:block`}
         >
           <ul className="grid gap-2 rounded-2xl border border-[color:var(--border)] bg-[rgba(255,255,255,0.42)] p-2 text-sm text-[var(--muted)] md:flex md:flex-wrap md:gap-x-3 md:gap-y-2.5 md:border-0 md:bg-transparent md:p-0">
-            {siteConfig.navigation.map((item) => (
+            {primaryNavigation.map((item) => (
               <li key={item.href} className={item.href === "/music" ? "group relative" : undefined}>
                 {item.href === "/music" ? (
                   <>
@@ -110,9 +112,25 @@ export function SiteHeader() {
                           <Link
                             href={musicItem.href}
                             onClick={() => setIsMenuOpen(false)}
-                            className="flex rounded-xl px-3.5 py-2 text-sm transition-colors duration-150 hover:bg-[rgba(255,255,255,0.64)] hover:text-[var(--foreground)]"
+                            className="flex items-center gap-2 rounded-xl px-3.5 py-2 text-sm transition-colors duration-150 hover:bg-[rgba(255,255,255,0.64)] hover:text-[var(--foreground)]"
                           >
-                            {musicItem.label}
+                            <span>{musicItem.label}</span>
+                            {musicItem.isExternal ? (
+                              <svg
+                                aria-hidden="true"
+                                viewBox="0 0 16 16"
+                                className="size-3.5 shrink-0"
+                                fill="none"
+                              >
+                                <path
+                                  d="M6 4.5H4.5A1.5 1.5 0 0 0 3 6v5.5A1.5 1.5 0 0 0 4.5 13H10a1.5 1.5 0 0 0 1.5-1.5V10M8.5 3H13v4.5M7.5 8.5 12.5 3.5"
+                                  stroke="currentColor"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="1.4"
+                                />
+                              </svg>
+                            ) : null}
                           </Link>
                         </li>
                       ))}

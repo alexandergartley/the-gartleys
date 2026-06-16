@@ -40,10 +40,7 @@ export default async function HomePage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="page-container">
             <div className="mx-auto max-w-3xl px-6 text-center sm:px-10">
-              <p className="text-xs uppercase tracking-[0.22em] text-[rgba(248,244,238,0.96)] [text-shadow:0_1px_10px_rgba(47,42,37,0.12)]">
-                The Gartleys
-              </p>
-              <h1 className="mt-5 font-serif text-5xl leading-none text-[rgba(248,244,238,0.98)] [text-shadow:0_4px_24px_rgba(47,42,37,0.16)] sm:text-7xl lg:text-[5.5rem]">
+              <h1 className="font-serif text-5xl leading-none text-[rgba(248,244,238,0.98)] [text-shadow:0_4px_24px_rgba(47,42,37,0.16)] sm:text-7xl lg:text-[5.5rem]">
                 Songs of healing and freedom
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[rgba(248,244,238,0.92)] [text-shadow:0_2px_16px_rgba(47,42,37,0.12)] sm:mx-auto sm:text-xl">
@@ -79,7 +76,7 @@ export default async function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={`/songs/${featuredSong.slug}`} className="button-primary">
-                Visit the full song page
+                Experience the song
               </Link>
             </div>
           </div>

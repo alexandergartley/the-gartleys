@@ -83,58 +83,60 @@ export default function FamilyPage() {
               <div>
                 <p className="max-w-3xl text-base leading-8 text-[var(--muted)]">{member.intro}</p>
 
-                <div className="mt-8 grid gap-5 md:grid-cols-2">
-                  {member.features.map((feature, index) => (
-                    <article
-                      key={feature.title}
-                      className={`rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.35)] p-5 ${
-                        feature.audio && !feature.image ? "md:translate-y-4" : index % 2 === 1 ? "md:translate-y-8" : ""
-                      }`}
-                    >
-                      {feature.image ? (
-                        <div className="overflow-hidden rounded-[1.25rem] border border-[var(--border)] bg-[var(--surface)]">
-                          <Image
-                            src={feature.image.src}
-                            alt={feature.image.alt}
-                            width={1200}
-                            height={900}
-                            className="w-full"
-                          />
-                        </div>
-                      ) : null}
-
-                      {feature.audio ? (
-                        <div className="rounded-[1.25rem] border border-[var(--border)] bg-[rgba(255,255,255,0.55)] p-4">
-                          <div
-                            aria-hidden="true"
-                            className="mb-4 flex h-10 items-end gap-1 overflow-hidden rounded-[0.9rem] border border-[var(--border)] bg-[rgba(255,255,255,0.52)] px-3 py-2"
-                          >
-                            {[12, 24, 16, 28, 20, 14, 26, 18, 30, 15, 22, 19].map((height, waveIndex) => (
-                              <span
-                                key={`${feature.title}-wave-${waveIndex}`}
-                                className="w-2 rounded-full bg-[rgba(113,113,95,0.28)]"
-                                style={{ height: `${height}px` }}
-                              />
-                            ))}
+                {member.features.length > 0 ? (
+                  <div className="mt-8 grid gap-5 md:grid-cols-2">
+                    {member.features.map((feature, index) => (
+                      <article
+                        key={feature.title}
+                        className={`rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.35)] p-5 ${
+                          feature.audio && !feature.image ? "md:translate-y-4" : index % 2 === 1 ? "md:translate-y-8" : ""
+                        }`}
+                      >
+                        {feature.image ? (
+                          <div className="overflow-hidden rounded-[1.25rem] border border-[var(--border)] bg-[var(--surface)]">
+                            <Image
+                              src={feature.image.src}
+                              alt={feature.image.alt}
+                              width={1200}
+                              height={900}
+                              className="w-full"
+                            />
                           </div>
-                          <audio className="w-full" controls preload="metadata">
-                            <source src={feature.audio.src} type={feature.audio.type ?? "audio/mp4"} />
-                            Your browser does not support the audio player.
-                          </audio>
-                        </div>
-                      ) : null}
+                        ) : null}
 
-                      <h3 className="mt-4 font-serif text-2xl">{feature.title}</h3>
-                      <p className="mt-3 text-base leading-7 text-[var(--muted)]">{feature.description}</p>
-                      {feature.image?.caption ? (
-                        <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{feature.image.caption}</p>
-                      ) : null}
-                      {feature.audio?.caption ? (
-                        <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{feature.audio.caption}</p>
-                      ) : null}
-                    </article>
-                  ))}
-                </div>
+                        {feature.audio ? (
+                          <div className="rounded-[1.25rem] border border-[var(--border)] bg-[rgba(255,255,255,0.55)] p-4">
+                            <div
+                              aria-hidden="true"
+                              className="mb-4 flex h-10 items-end gap-1 overflow-hidden rounded-[0.9rem] border border-[var(--border)] bg-[rgba(255,255,255,0.52)] px-3 py-2"
+                            >
+                              {[12, 24, 16, 28, 20, 14, 26, 18, 30, 15, 22, 19].map((height, waveIndex) => (
+                                <span
+                                  key={`${feature.title}-wave-${waveIndex}`}
+                                  className="w-2 rounded-full bg-[rgba(113,113,95,0.28)]"
+                                  style={{ height: `${height}px` }}
+                                />
+                              ))}
+                            </div>
+                            <audio className="w-full" controls preload="metadata">
+                              <source src={feature.audio.src} type={feature.audio.type ?? "audio/mp4"} />
+                              Your browser does not support the audio player.
+                            </audio>
+                          </div>
+                        ) : null}
+
+                        <h3 className="mt-4 font-serif text-2xl">{feature.title}</h3>
+                        <p className="mt-3 text-base leading-7 text-[var(--muted)]">{feature.description}</p>
+                        {feature.image?.caption ? (
+                          <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{feature.image.caption}</p>
+                        ) : null}
+                        {feature.audio?.caption ? (
+                          <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{feature.audio.caption}</p>
+                        ) : null}
+                      </article>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             </div>
           </section>
