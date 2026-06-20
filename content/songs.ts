@@ -2,6 +2,103 @@ import type { Song } from "@/lib/types";
 
 export const songs: Song[] = [
   {
+    title: "Just Depend on Me",
+    slug: "just-depend-on-me",
+    summary:
+      "A tender response song from the Father's heart, inviting childlike trust, surrender, and the simple joy of depending on Him.",
+    descriptor:
+      "A Father's-heart worship song for learning to abide, sing simply, and trust that dependence is not weakness to Him.",
+    anchorLine: "Anchored in John 15:4-5 and Psalm 139:17-18.",
+    themeSlugs: ["trust", "surrender", "worship"],
+    releaseDate: "2026-06-19",
+    coverImage: {
+      src: "/covers/just-depend-on-me.jpg",
+      alt: "Just Depend on Me cover art",
+      caption: "Single artwork"
+    },
+    mediaEmbedUrl: "https://www.youtube-nocookie.com/embed/KeDhIoV9Q0Y",
+    streamingLinks: [
+      {
+        label: "YouTube",
+        href: "https://youtu.be/KeDhIoV9Q0Y"
+      }
+    ],
+    alternateVersions: [
+      {
+        title: "Story and Song Version",
+        description:
+          "A story-and-song version sharing the heart behind the song and the cry of dependence it came from.",
+        href: "https://youtu.be/MSJ1TkF0OpU",
+        embedUrl: "https://www.youtube-nocookie.com/embed/MSJ1TkF0OpU"
+      }
+    ],
+    lyrics: `More than the sound of the wind in the trees
+Great as the current under the sea
+I love the sound of you singing to Me
+That you depend on Me
+
+Delight in My heart as I watch you sleep
+More thoughts towards you than the sands in the sea
+Oh, I love the sound of you singing to Me
+That you depend on Me
+
+Oh, sing your song to Me
+Just depend on Me
+
+Child, I've desires for you deep in My heart
+Oh, at your cry I don't take second thoughts
+I come running as fast as I can
+Oh I will part the sea
+When you cry out to Me
+
+Oh, sing your song to Me
+Just depend on Me
+
+A child picking flowers as a gift to My heart
+Your song of surrender pierces My heart
+The key to the dreams that I have for you
+Oh just depend on Me`,
+    aboutText:
+      "Just Depend on Me came as God's response to our cry of dependence. Inspired by Abide by Aaron Williams / Dwell and CAIN, the song holds the tenderness of the Father answering surrender with delight, nearness, and invitation.",
+    storyText: [
+      "The lyric is written from the heart of God toward His child - delighting over the sound of simple dependence, the way a parent receives a small song, a flower, or a cry for help as something precious.",
+      "It turns dependence into intimacy. The song does not treat surrender as striving harder to prove faith; it receives dependence as the way we abide, stay close, and trust that He comes running when we cry.",
+      "The child-in-the-field image became a picture of worship without performance: a small offering given with love, and a Father whose heart is moved by it."
+    ],
+    scriptureReferences: [
+      {
+        reference: "John 15:4-5",
+        passage:
+          "Abide in me, and I in you... apart from me you can do nothing.",
+        reflection:
+          "This is the invitation under the song - not self-sufficiency, but a life kept close to Jesus."
+      },
+      {
+        reference: "Psalm 139:17-18",
+        passage:
+          "How precious to me are your thoughts, O God! How vast is the sum of them... more than the sand.",
+        reflection:
+          "The lyric echoes the wonder of being known, loved, and held in thoughts too many to count."
+      }
+    ],
+    timeline: [
+      {
+        label: "Recorded",
+        date: "2026-05-29",
+        description:
+          "Recorded as a story-and-song version, carrying both the song and the heart behind its cry of dependence."
+      },
+      {
+        label: "Release day",
+        date: "2026-06-19",
+        description:
+          "Released on YouTube as an invitation to abide, surrender, and hear the Father's delight over childlike dependence."
+      }
+    ],
+    reflectionText:
+      "Father, teach us to depend on You without fear or striving. Let our surrender become a song You delight in, and let our cry draw us closer to Your heart. Help us abide in Jesus, trust Your nearness, and receive the dreams You hold for us from a place of childlike love. Amen."
+  },
+  {
     title: "Jesus Over Everything",
     slug: "jesus-over-everything",
     summary:
