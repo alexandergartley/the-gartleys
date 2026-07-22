@@ -53,13 +53,7 @@ export function LiveWorshipCallout({ variant = "featured" }: LiveWorshipCalloutP
             title={liveWorshipSeries.latestSession.title}
             url={liveWorshipSeries.latestSession.embedUrl}
           />
-          <p className="section-eyebrow mt-6">Latest Session</p>
-          <h3 className="mt-3 font-serif text-3xl leading-tight sm:text-4xl">
-            {liveWorshipSeries.latestSession.title}
-          </h3>
-          <p className="mt-4 text-base leading-8 text-[var(--muted)]">
-            {liveWorshipSeries.latestSession.description}
-          </p>
+          <p className="section-eyebrow mt-3">Latest Session</p>
         </div>
       </div>
     </section>

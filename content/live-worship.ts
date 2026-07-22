@@ -6,9 +6,7 @@ export const liveWorshipSeries = {
   playlistUrl:
     "https://youtube.com/playlist?list=PLhuLtu2X5kNbbzYPz7NkCR3IXkvOjCC8A&si=Prs0nOSuz0DuxOwQ",
   latestSession: {
-    title: "Our first live worship session",
-    embedUrl: "https://www.youtube-nocookie.com/embed/scFqnfQwfWk",
-    description:
-      "A simple hour of worship and prayer, recorded live as the first session in the series."
+    title: "Latest live worship session",
+    embedUrl: "https://www.youtube-nocookie.com/embed/Job8rgOAyW0"
   }
 } as const;
