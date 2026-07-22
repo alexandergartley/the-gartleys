@@ -43,8 +43,8 @@ export default async function HomePage() {
               <h1 className="font-serif text-5xl leading-none text-[rgba(248,244,238,0.98)] [text-shadow:0_4px_24px_rgba(47,42,37,0.16)] sm:text-7xl lg:text-[5.5rem]">
                 Songs of healing and freedom
               </h1>
-              <p className="mt-5 max-w-xl text-lg leading-8 text-[rgba(248,244,238,0.92)] [text-shadow:0_2px_16px_rgba(47,42,37,0.12)] sm:mx-auto sm:text-xl">
-                Songs, prayers, and stories from our journey with the Lord as a family.
+              <p className="mt-5 max-w-xl text-lg leading-8 text-[rgba(248,244,238,0.92)] [text-shadow:0_2px_16px_rgba(47,42,37,0.12)] sm:mx-auto sm:text-xl lg:max-w-none lg:whitespace-nowrap">
+                Songs, prayers, and stories from our family&apos;s journey with Jesus.
               </p>
               <div className="mt-8 flex justify-center">
                 <Link

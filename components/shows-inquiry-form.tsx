@@ -42,6 +42,14 @@ export function ShowsInquiryForm() {
 
   return (
     <form className="soft-panel rounded-[2rem] p-6 sm:p-9" onSubmit={handleSubmit}>
+      <div className="mb-6 max-w-2xl">
+        <h2 className="font-serif text-[clamp(1.7rem,3vw,2.15rem)] leading-[1.12]">
+          Event Inquiry Form
+        </h2>
+        <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+          Tell us a little about the gathering, and we&apos;ll follow up personally.
+        </p>
+      </div>
       <div className="grid gap-5 sm:grid-cols-2 sm:gap-6">
         <label className="block">
           <span className="mb-2 block text-sm font-medium text-[var(--muted)]">Name</span>
