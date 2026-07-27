@@ -25,11 +25,11 @@ export default function ShowsPage() {
           <figure className="soft-panel scrap-photo order-first mx-auto w-full max-w-sm rotate-[-2deg] overflow-hidden rounded-[1.75rem] p-3 shadow-[0_16px_30px_rgba(47,42,37,0.08)] lg:order-last lg:mx-0 lg:justify-self-end lg:rotate-[2deg]">
             <div className="aspect-square overflow-hidden rounded-[1.35rem]">
               <Image
-                src="/shows/story-song-agape-cafe.jpeg"
+                src="/shows/story-song-agape-cafe-square.jpeg"
                 alt="The Gartleys leading music during Story + Song at Agape Café"
                 width={1620}
                 height={1620}
-                className="h-full w-full object-cover object-left"
+                className="h-full w-full object-cover"
                 priority
               />
             </div>
