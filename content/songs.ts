@@ -316,6 +316,17 @@ I can tear the loaf again and again and again`,
         href: "https://www.youtube.com/watch?v=BewNv7lelZE"
       }
     ],
+    alternateVersions: [
+      {
+        title: "Live at Stories & Songs",
+        embedTitle:
+          "Your Yoke Is Easy (Live at Stories & Songs) | Acoustic Worship | The Gartleys",
+        description:
+          "A live acoustic performance recorded at our Stories & Songs event at Agape Café.",
+        href: "https://youtu.be/kwImLzp0b2Q?si=0zjmZ4Oclfm3GPK3",
+        embedUrl: "https://www.youtube-nocookie.com/embed/kwImLzp0b2Q"
+      }
+    ],
     lyrics: `I trust you, Jesus. You will work it out
 All I know is I will lay it down
 

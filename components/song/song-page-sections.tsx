@@ -302,6 +302,36 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
         </SongSection>
       ) : null}
 
+      {song.alternateVersions?.length ? (
+        <SongSection title="Other Versions">
+          <div className="grid gap-6">
+            {song.alternateVersions.map((version) => (
+              <article key={version.title} className="soft-panel rounded-[1.75rem] p-6 sm:p-8">
+                <h3 className="font-serif text-2xl">{version.title}</h3>
+                <p className="mt-3 max-w-3xl text-base leading-7 text-[var(--muted)]">
+                  {version.description}
+                </p>
+                {version.embedUrl ? (
+                  <div className="mt-6">
+                    <MediaEmbed title={version.embedTitle ?? version.title} url={version.embedUrl} />
+                  </div>
+                ) : null}
+                {version.href ? (
+                  <a
+                    href={version.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-6 inline-flex button-secondary"
+                  >
+                    Open version
+                  </a>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </SongSection>
+      ) : null}
+
       {song.notesImages?.length ? (
         <SongSection title="Handwritten Notes">
           <div className="grid gap-6 md:grid-cols-2">
@@ -319,36 +349,6 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
                   </figcaption>
                 ) : null}
               </figure>
-            ))}
-          </div>
-        </SongSection>
-      ) : null}
-
-      {song.alternateVersions?.length ? (
-        <SongSection title="Other Versions">
-          <div className="grid gap-6">
-            {song.alternateVersions.map((version) => (
-              <article key={version.title} className="soft-panel rounded-[1.75rem] p-6 sm:p-8">
-                <h3 className="font-serif text-2xl">{version.title}</h3>
-                <p className="mt-3 max-w-3xl text-base leading-7 text-[var(--muted)]">
-                  {version.description}
-                </p>
-                {version.embedUrl ? (
-                  <div className="mt-6">
-                    <MediaEmbed title={version.title} url={version.embedUrl} />
-                  </div>
-                ) : null}
-                {version.href ? (
-                  <a
-                    href={version.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-6 inline-flex button-secondary"
-                  >
-                    Open version
-                  </a>
-                ) : null}
-              </article>
             ))}
           </div>
         </SongSection>

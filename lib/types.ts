@@ -28,6 +28,7 @@ export type NoteImage = {
 
 export type AlternateVersion = {
   title: string;
+  embedTitle?: string;
   description: string;
   href?: string;
   embedUrl?: string;
