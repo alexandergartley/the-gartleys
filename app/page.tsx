@@ -35,7 +35,7 @@ export default async function HomePage() {
         />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(248,244,238,0.14),rgba(248,244,238,0.1)_20%,rgba(248,244,238,0.16)_44%,rgba(248,244,238,0.46)_68%,rgba(248,244,238,0.78)_84%,rgba(248,244,238,0.96)_94%,#f8f4ee_100%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.34),transparent_42%)]" />
-        <div className="absolute inset-0 bg-[rgba(47,42,37,0.12)]" />
+        <div className="absolute inset-0 bg-[rgba(0,0,0,0.48)] sm:bg-[linear-gradient(to_right,rgba(0,0,0,0.55),rgba(0,0,0,0.35),rgba(0,0,0,0.18))]" />
         <div className="absolute inset-x-0 bottom-[-1px] h-24 bg-[linear-gradient(to_bottom,rgba(248,244,238,0),#f8f4ee_88%)]" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="page-container">
