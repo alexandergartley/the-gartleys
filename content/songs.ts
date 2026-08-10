@@ -883,17 +883,26 @@ Jesus, take hold of me`,
     descriptor: "A transition song for leaving one mountain behind and saying yes to the next one with Jesus.",
     anchorLine: "Anchored in Hebrews 12:1-2.",
     themeSlugs: ["calling", "trust", "worship"],
-    releaseDate: "2020-04-19",
+    releaseDate: "2026-08-09",
     coverImage: {
       src: "/covers/new-mountain.jpg",
       alt: "New Mountain single artwork",
       caption: "Single artwork"
     },
-    mediaEmbedUrl: "https://www.youtube-nocookie.com/embed/V5wu0EaPj-s",
+    mediaEmbedUrl: "https://www.youtube-nocookie.com/embed/BOES7rTC9OY",
     streamingLinks: [
       {
         label: "YouTube",
-        href: "https://www.youtube.com/watch?v=V5wu0EaPj-s"
+        href: "https://youtu.be/BOES7rTC9OY"
+      }
+    ],
+    alternateVersions: [
+      {
+        title: "Original 2020 Version",
+        description:
+          "The original recording of New Mountain, shared during our transition into full-time ministry with Coreluv.",
+        href: "https://www.youtube.com/watch?v=V5wu0EaPj-s",
+        embedUrl: "https://www.youtube-nocookie.com/embed/V5wu0EaPj-s"
       }
     ],
     aboutText:
@@ -974,10 +983,16 @@ What else could be worth it? What else could be sweeter than You, sweeter than Y
     ],
     timeline: [
       {
-        label: "Release day",
+        label: "Written and originally recorded",
         date: "2020-04-19",
         description:
-          "Released as a song of obedience and transition, sending its risk-filled yes into a season of new calling."
+          "Written and originally recorded in April 2020 during our transition into full-time ministry with Coreluv, as we processed following Jesus through a new season and assignment."
+      },
+      {
+        label: "Acoustic version released",
+        date: "2026-08-09",
+        description:
+          "Six years later, we returned to New Mountain in another season of transition and recorded a new acoustic version with Cristin on vocals and Alexander on guitar."
       }
     ],
     reflectionText:
