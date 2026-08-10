@@ -58,6 +58,27 @@ through `main`.
   for published changes. Do not duplicate it with the known-stalling local
   Next.js build unless specifically debugging local build behavior.
 
+## Routine Publishing Fast Path
+
+For routine approved changes already implemented and verified in the
+immediately preceding task, when the repository is on the expected `main`
+branch with its configured `origin` upstream:
+
+- Follow the verification-reuse and Git/deployment workflows above directly.
+  Do not search project memory or historical notes to rediscover them.
+- Do not load generic Git, PR, or deployment guidance unless active tool
+  instructions require it or an unexpected repository state creates ambiguity.
+- If the working diff is unchanged, do not repeat semantic application
+  verification. Confirm the intended diff, run `git diff --check`, stage exact
+  files, and inspect the staged scope before committing.
+- After a successful exact-file commit, do not re-prove the same scope with
+  additional `git show`, history inspection, or equivalent checks unless
+  something appears inconsistent.
+- Create all requested commits, push once, confirm `HEAD` matches `origin/main`,
+  then run the established production deployment once.
+- Keep routine publishing focused on the shortest safe path from verified diff
+  to deployed production.
+
 ## Production Verification
 
 When verifying deployed content:
