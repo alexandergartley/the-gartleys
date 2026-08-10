@@ -414,6 +414,21 @@ You will teach me to trust and obey`,
         href: "https://www.youtube.com/watch?v=NsDT2IPlTgc"
       }
     ],
+    alternateVersions: [
+      {
+        title: "Live at Agape Café",
+        description: "A song-only live performance recorded at Agape Café.",
+        href: "https://youtu.be/4L1ntzCJWWk",
+        embedUrl: "https://www.youtube-nocookie.com/embed/4L1ntzCJWWk"
+      },
+      {
+        title: "Story + Song — Live at Agape Café",
+        description:
+          "The story behind Amazing Grace (Hallelujah), followed by the live performance at Agape Café.",
+        href: "https://youtu.be/f18Bt0KadJI",
+        embedUrl: "https://www.youtube-nocookie.com/embed/f18Bt0KadJI"
+      }
+    ],
     lyrics: `Amazing grace, how sweet the sound
 I once was lost but now am found
 I was blind, but now I see
