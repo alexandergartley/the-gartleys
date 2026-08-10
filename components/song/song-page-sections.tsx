@@ -316,16 +316,6 @@ export function SongPageSections({ song }: SongPageSectionsProps) {
                     <MediaEmbed title={version.embedTitle ?? version.title} url={version.embedUrl} />
                   </div>
                 ) : null}
-                {version.href ? (
-                  <a
-                    href={version.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-6 inline-flex button-secondary"
-                  >
-                    Open version
-                  </a>
-                ) : null}
               </article>
             ))}
           </div>
