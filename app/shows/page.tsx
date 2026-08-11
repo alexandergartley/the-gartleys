@@ -18,7 +18,8 @@ export default function ShowsPage() {
     <PageShell className="py-12 sm:py-20">
       <SectionHeading
         eyebrow="Shows / Booking"
-        title="Worship. Story. Presence."
+        title="Live Shows and Worship with The Gartleys"
+        headingLevel="h1"
       />
       <div className="mt-10 max-w-4xl">
         <div className="mb-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">

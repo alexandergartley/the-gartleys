@@ -31,6 +31,7 @@ export default function StoryPage() {
         eyebrow="Story"
         title="We&apos;re the Gartleys, writing songs as we follow Jesus in real time."
         description="One day, one season, one song at a time."
+        headingLevel="h1"
       />
       <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,44rem)_minmax(0,18rem)] lg:items-start">
         <article className="prose-gartley">

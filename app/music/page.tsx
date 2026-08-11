@@ -25,8 +25,9 @@ export default function MusicPage() {
     <PageShell className="py-12 sm:py-20">
       <SectionHeading
         eyebrow="Music"
-        title="Songs, one at a time"
+        title="Original Worship Songs, One at a Time"
         description="Each song holds a moment - the music, the story behind it, and the Scripture that shaped it."
+        headingLevel="h1"
       />
       <section id="themes" aria-labelledby="music-themes-heading" className="mt-8 scroll-mt-24">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
