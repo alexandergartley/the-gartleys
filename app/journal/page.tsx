@@ -6,7 +6,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   title: "Journal",
   description:
-    "Journal entries from The Gartleys on songs, family life, and following Jesus in ordinary days.",
+    "Read journal entries from The Gartleys on worship, songwriting, family life, faith, and following Jesus through ordinary seasons.",
   path: "/journal",
   image: "/family-photo.jpg"
 });

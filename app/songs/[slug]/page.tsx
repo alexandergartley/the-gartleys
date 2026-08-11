@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: SongPageProps): Promise<Metad
 
   return buildPageMetadata({
     title: song.title,
-    description: song.summary,
+    description: song.metaDescription ?? song.summary,
     path: `/songs/${song.slug}`,
     image: song.coverImage?.src
   });

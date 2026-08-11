@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ThemePageProps): Promise<Meta
 
   return buildPageMetadata({
     title: `${theme.label} Songs`,
-    description: theme.intro,
+    description: theme.metaDescription ?? theme.intro,
     path: `/themes/${theme.slug}`
   });
 }

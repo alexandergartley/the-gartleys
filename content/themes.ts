@@ -6,6 +6,8 @@ export const songThemes: SongTheme[] = [
     label: "Trust & Dependence",
     intro:
       "Songs about leaning on Jesus when we cannot carry or control what comes next.",
+    metaDescription:
+      "Explore worship songs about trusting Jesus, depending on Him in uncertainty, and learning to rest in His faithfulness.",
     scriptures: [
       {
         reference: "Proverbs 3:5-6",
@@ -27,6 +29,8 @@ export const songThemes: SongTheme[] = [
     label: "Surrender & Obedience",
     intro:
       "Songs about laying down our own way, yielding to Jesus, and following where He leads.",
+    metaDescription:
+      "Explore worship songs about surrendering our own way, yielding to Jesus, and choosing obedience as He leads us forward.",
     scriptures: [
       {
         reference: "Romans 12:1",
@@ -48,6 +52,8 @@ export const songThemes: SongTheme[] = [
     label: "Waiting & Hope",
     intro:
       "Songs for the in-between: blessing His name, holding onto hope, and trusting Him in the valley.",
+    metaDescription:
+      "Explore worship songs for seasons of waiting, holding onto hope, blessing God in the valley, and trusting His faithfulness.",
     scriptures: [
       {
         reference: "Romans 15:13",
@@ -70,6 +76,8 @@ export const songThemes: SongTheme[] = [
     label: "Peace & Freedom",
     intro:
       "Songs that turn from fear and anxiety toward the peace, victory, and freedom found in Christ.",
+    metaDescription:
+      "Explore worship songs that turn from fear and anxiety toward the peace, freedom, victory, and security found in Jesus.",
     scriptures: [
       {
         reference: "John 8:36",
@@ -90,6 +98,8 @@ export const songThemes: SongTheme[] = [
     label: "Healing & Restoration",
     intro:
       "Songs about bringing what is broken to the Father and trusting Him to heal, redeem, and make new.",
+    metaDescription:
+      "Explore worship songs about bringing what is broken to the Father and trusting Jesus for healing, redemption, and restoration.",
     scriptures: [
       {
         reference: "Psalm 147:3",
@@ -111,6 +121,8 @@ export const songThemes: SongTheme[] = [
     label: "Grace & Redemption",
     intro:
       "Songs centered on the cross, salvation, mercy, and the new life we have in Jesus.",
+    metaDescription:
+      "Explore worship songs centered on the cross, salvation, mercy, redemption, and the new life we receive through Jesus.",
     scriptures: [
       {
         reference: "Ephesians 2:4-5",
@@ -133,6 +145,8 @@ export const songThemes: SongTheme[] = [
     label: "Presence & Worship",
     intro:
       "Songs of adoration, prayer, and making space for the presence of God.",
+    metaDescription:
+      "Explore worship songs about adoration, prayer, making space for God, and learning to live attentive to His presence.",
     scriptures: [
       {
         reference: "Psalm 95:1-2",
@@ -155,6 +169,8 @@ export const songThemes: SongTheme[] = [
     label: "Calling & Transition",
     intro:
       "Songs for change, obedience, new seasons, and following Jesus into what comes next.",
+    metaDescription:
+      "Explore worship songs for seasons of change, calling, obedience, and following Jesus faithfully into what comes next.",
     scriptures: [
       {
         reference: "Hebrews 12:1-2",

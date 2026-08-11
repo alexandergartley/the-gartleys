@@ -38,6 +38,7 @@ export type Song = {
   title: string;
   slug: string;
   summary: string;
+  metaDescription?: string;
   descriptor?: string;
   anchorLine?: string;
   themeSlugs?: string[];
@@ -71,6 +72,7 @@ export type SongTheme = {
   slug: string;
   label: string;
   intro: string;
+  metaDescription?: string;
   scriptures: ThemeScripture[];
 };
 

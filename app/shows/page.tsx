@@ -9,7 +9,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   title: "Shows",
   description:
-    "Booking page for worship leading and event inquiries for The Gartleys.",
+    "See upcoming shows and learn how to invite The Gartleys to lead worship at churches, gatherings, and special events.",
   path: "/shows"
 });
 

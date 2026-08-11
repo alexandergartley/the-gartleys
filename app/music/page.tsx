@@ -12,7 +12,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   title: "Music",
   description:
-    "Browse The Gartleys song library with recordings, lyrics, and stories behind each release.",
+    "Explore original worship songs from The Gartleys, with recordings, lyrics, stories, themes, and reflections from their journey with Jesus.",
   path: "/music"
 });
 

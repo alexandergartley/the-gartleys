@@ -390,6 +390,8 @@ You will teach me to trust and obey`,
     slug: "amazing-grace-hallelujah",
     summary:
       "A response to grace - simple, grateful, and centered on the new life we have in Jesus.",
+    metaDescription:
+      "Amazing Grace (Hallelujah) is an original worship song of gratitude, redemption, and praise for the new life we have in Jesus.",
     descriptor: "A grateful freedom song for remembering what grace has done and who Jesus has made us now.",
     anchorLine: "Anchored in Ephesians 2:4-5.",
     themeSlugs: ["freedom", "grace", "worship"],
@@ -580,6 +582,8 @@ Nothing it won't overcome`,
     slug: "we-make-space-for-you",
     summary:
       "A quiet prayer to surrender what doesn't belong and invite His presence to fill every part.",
+    metaDescription:
+      "We Make Space For You is an original worship song of surrender, inviting God's presence to fill every part of our lives.",
     descriptor: "A surrender song for clearing the room and asking Jesus to fill what remains.",
     anchorLine: "Anchored in 2 Corinthians 7:1.",
     themeSlugs: ["surrender", "worship", "healing"],
@@ -787,6 +791,8 @@ Can wait a year or two.`,
     slug: "mind-of-christ",
     summary:
       "Written in anxious days - a prayer for steadiness, clarity, and the peace that comes from Him.",
+    metaDescription:
+      "Mind of Christ is an original worship song and prayer for renewed thinking, steadiness, clarity, and the peace that comes from Jesus.",
     descriptor: "A prayer-song for anxious seasons when peace has to be received before it can be felt.",
     anchorLine: "Anchored in Romans 8:6.",
     themeSlugs: ["trust", "freedom", "calling"],
@@ -895,6 +901,8 @@ Jesus, take hold of me`,
     slug: "new-mountain",
     summary:
       "A step of obedience into something new - trusting Jesus in the unknown.",
+    metaDescription:
+      "New Mountain is an original worship song about trusting Jesus through change, transition, and the unknown as He leads us forward.",
     descriptor: "A transition song for leaving one mountain behind and saying yes to the next one with Jesus.",
     anchorLine: "Anchored in Hebrews 12:1-2.",
     themeSlugs: ["calling", "trust", "worship"],
@@ -1018,6 +1026,8 @@ What else could be worth it? What else could be sweeter than You, sweeter than Y
     slug: "king-of-broken-things",
     summary:
       "A song for bringing what's broken to the Father - and trusting Him to redeem what we can't.",
+    metaDescription:
+      "King of Broken Things is an original worship song about bringing what is broken to the Father and trusting Him to redeem what we cannot.",
     descriptor: "A quiet offering for suffering seasons when the only honest thing left to bring is what hurts.",
     anchorLine: "Anchored in Psalm 147:3.",
     themeSlugs: ["healing", "hope", "worship"],
@@ -1088,6 +1098,8 @@ Brokenness our offering, redemption spilling over me`,
     slug: "cry-out-to-you",
     summary:
       "A valley song - when the only right response is to cry out and hold onto Him.",
+    metaDescription:
+      "Cry Out To You is an original worship song for the valley, when the faithful response is to cry out to Jesus and hold onto Him.",
     descriptor: "A prayer from the valley for the moments when peace feels far away but God is still the Rock.",
     anchorLine: "Anchored in Psalm 61:2.",
     themeSlugs: ["trust", "hope", "healing"],
@@ -1243,6 +1255,8 @@ As we bless Your holy name`,
     slug: "get-ready",
     summary:
       "Written in a season of letting go - making space for what God is doing next.",
+    metaDescription:
+      "Get Ready is an original worship song about letting go, making space for God, and trusting Him as He leads us into what comes next.",
     descriptor: "A wilderness song about release, readiness, and trusting that God is already making a way.",
     anchorLine: "Anchored in Isaiah 43:18-19.",
     themeSlugs: ["calling", "surrender", "hope"],
