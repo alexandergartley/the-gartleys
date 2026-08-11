@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "The Gartleys",
   title: "The Gartleys | Songs of healing and freedom",
   description:
-    "Songs from a family walking with Jesus through real life.",
+    "Worship, songs, stories, and reflections from the Gartley family's journey with Jesus.",
   url: "https://thegartleys.com",
   socialLinks: [
     {
