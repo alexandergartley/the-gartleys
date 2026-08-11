@@ -1,105 +1,101 @@
-## Verification and Local Next.js Servers
+## Scope and Context
 
-This repository has a known local issue where Next.js dev and production
-build commands may stall silently during Turbopack or webpack startup.
+For routine, narrowly scoped changes:
 
-To avoid wasting time and compute:
+- Start with this `AGENTS.md`, the target file, and direct references or
+  consumers of the affected code.
+- Do not search project memory, historical notes, or broad unrelated parts of
+  the repository unless needed to resolve ambiguity.
+- Once the relevant implementation and dependencies are understood, stop
+  expanding the search unless new uncertainty appears.
+- Make the smallest change that satisfies the request and avoid unrelated
+  cleanup or refactoring.
 
-- Do not run `npm run dev`, `next dev`, `npm run build`, or `next build`
-  automatically for routine content, data, copy, metadata, or other
-  low-risk changes that do not alter application architecture.
-- Prefer focused verification appropriate to the files changed:
-  targeted assertions, type checks when useful, linting when responsive,
-  `git diff --check`, and manual source/diff review.
-- For data-only changes using existing components, focused data assertions
-  plus source review are normally sufficient.
-- Do not start a local server solely to perform browser verification for
-  a change that does not affect layout or component behavior.
-- If a local Next.js server or build is genuinely necessary, make one
-  attempt with the normal project configuration.
-- If the command becomes silent/stalled during startup, terminate it after
-  a reasonable bounded wait rather than continuing indefinitely.
-- Do not then retry the same verification with both Turbopack and webpack
-  unless the task specifically concerns bundling or build behavior.
-- If both bundlers have already demonstrated the same startup stall,
-  stop retrying and report the verification limitation.
-- Never treat a known local tooling stall as evidence that the code change
-  itself failed.
+## Local Verification
 
-## Reusing Previous Verification
+This repository has a known local issue where Next.js development and
+production build commands may stall silently during Turbopack or webpack
+startup.
 
-When committing or publishing a change that was completed and verified in the
-immediately preceding task:
+- Do not automatically run `npm run dev`, `next dev`, `npm run build`, or
+  `next build` for routine content, data, copy, metadata, or other low-risk
+  changes using established components.
+- Prefer verification appropriate to the change: targeted assertions,
+  responsive lint/type checks when useful, `git diff --check`, reference
+  searches, and source/diff review.
+- For data-only changes using existing components, focused assertions plus
+  source review are normally sufficient.
+- Do not start a local server solely for browser verification when the change
+  does not affect layout or component behavior.
+- If a local build, server, lint, typecheck, or similar optional command stalls
+  without useful progress, terminate it after a bounded wait. Do not retry the
+  same verification through multiple equivalent commands unless the task
+  specifically concerns that tooling.
+- A local tooling stall is an environment limitation, not evidence that the
+  code change failed.
+- For published changes, treat the successful Vercel remote build as the
+  primary compile/type/build gate.
 
-- Do not repeat detailed semantic assertions, tests, or source analysis unless
-  the working diff has changed since that verification.
-- Confirm the diff still matches the previously verified change, run
-  `git diff --check`, and proceed with the requested Git/deployment workflow.
-- Re-run deeper verification only if the change was modified, verification
-  previously failed, or publishing exposes a new issue.
+## Git and Routine Publishing
 
-## Git and Deployment Workflow
+Never commit, push, or deploy unless the user explicitly requests publishing
+or Git changes.
 
-This repository normally publishes routine approved website updates directly
-through `main`.
+This repository normally publishes approved website updates directly through
+`main` using its configured `origin` upstream.
 
-- Use the existing `main` branch and its configured `origin` upstream for
-  routine approved content/data changes unless the user requests otherwise.
-- Do not create a PR or feature branch solely because a generic Git skill
+For a change that was completed and verified in the immediately preceding task:
+
+- If the working diff is unchanged, do not repeat detailed semantic
+  verification or source analysis.
+- Confirm the intended diff, run `git diff --check`, stage only the intended
+  files, and inspect the staged scope before committing.
+- Do not create a PR or feature branch solely because generic Git guidance
   recommends one.
 - Never force-push or rewrite history.
-- Stage only the intended files and inspect the staged diff before committing.
-- After pushing an approved production change to `main`, deploy it with the
-  repository's established linked Vercel workflow: `npx vercel --prod --yes`.
-- Do not spend time checking for an automatic Git-triggered Vercel deployment;
-  this repository currently requires the manual production deployment after
-  push.
-- Treat the Vercel remote production build as the primary build verification
-  for published changes. Do not duplicate it with the known-stalling local
-  Next.js build unless specifically debugging local build behavior.
+- Do not re-prove a successful exact-file commit with additional history or
+  scope checks unless something appears inconsistent.
+- Create all requested commits, push once, and confirm `HEAD` matches
+  `origin/main`.
+- After pushing an approved production change to `main`, deploy once using:
 
-## Routine Publishing Fast Path
+  `npx vercel --prod --yes`
 
-For routine approved changes already implemented and verified in the
-immediately preceding task, when the repository is on the expected `main`
-branch with its configured `origin` upstream:
+- Do not check for an automatic Vercel deployment first; this repository
+  currently requires the linked manual production deployment after push.
 
-- Follow the verification-reuse and Git/deployment workflows above directly.
-  Do not search project memory or historical notes to rediscover them.
-- Do not load generic Git, PR, or deployment guidance unless active tool
-  instructions require it or an unexpected repository state creates ambiguity.
-- If the working diff is unchanged, do not repeat semantic application
-  verification. Confirm the intended diff, run `git diff --check`, stage exact
-  files, and inspect the staged scope before committing.
-- After a successful exact-file commit, do not re-prove the same scope with
-  additional `git show`, history inspection, or equivalent checks unless
-  something appears inconsistent.
-- Create all requested commits, push once, confirm `HEAD` matches `origin/main`,
-  then run the established production deployment once.
-- Keep routine publishing focused on the shortest safe path from verified diff
-  to deployed production.
+Re-run deeper verification only when the diff changed, previous verification
+failed, or publishing exposes a new issue.
 
 ## Production Verification
 
-When verifying deployed content:
+Keep production verification proportional to the change and verify each
+changed surface once at the most appropriate layer.
 
-- Prefer stable semantic identifiers and content over exact serialized HTML
-  formatting.
-- Verify durable values such as route status, video IDs, titles, labels, image
-  paths, and expected ordering.
-- Avoid brittle assertions against exact rendered date strings, whitespace,
-  HTML structure, or formatting when the underlying data can be verified more
-  reliably.
-- For routine content changes, verifying the production apex domain is normally
-  sufficient.
-- Do not also verify the `www` domain and raw Vercel deployment URL unless the
-  task concerns redirects, aliases, domains, or deployment routing.
+- For routine changes, verify the production apex domain only. Do not also
+  check `www` or the raw Vercel deployment URL unless the task concerns
+  redirects, aliases, domains, or routing.
+- Use HTTP or source checks for machine-readable values such as response
+  status, URLs, video IDs, asset paths, metadata, and expected ordering.
+- Use browser-rendered DOM text for user-visible dates, labels, headings, and
+  copy. Do not assert exact user-visible sentences against raw streamed React
+  HTML when serialization may split the text.
+- Use browser verification for visual layout and responsive behavior rather
+  than re-checking identifiers already confirmed at the HTTP/source layer.
+- Reuse one browser session when practical: verify desktop, resize for mobile,
+  then navigate to other affected routes as needed.
+- Do not verify unrelated unchanged routes unless the change could reasonably
+  affect them or the user specifically requests it.
+- If a raw-HTML text assertion fails because of serialization, switch directly
+  to rendered browser verification rather than trying another serialized form.
 
-## Shell Command Safety
+## Working Principles
 
-When running inline Node.js assertions from the shell:
-
-- Avoid JavaScript template literals inside double-quoted `node -e` commands,
-  because the shell may interpret `${...}` before Node receives it.
-- Prefer simple string concatenation, properly single-quoted scripts, or a
-  quoted heredoc for nontrivial assertions.
+- Preserve existing architecture, design patterns, content, and behavior unless
+  the task requires changing them.
+- Do not make unrelated improvements simply because they are discovered during
+  a focused task.
+- Report unexpected issues separately instead of expanding the requested scope
+  without approval.
+- Prefer the shortest safe path that provides enough evidence to trust the
+  change.
