@@ -42,7 +42,7 @@ export default function MusicPage() {
             href="/themes"
             className="w-fit text-sm text-[var(--foreground)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:decoration-[var(--foreground)]"
           >
-            Explore all themes
+            Explore all themes →
           </Link>
         </div>
         <div className="mt-4 flex flex-wrap gap-2.5">
