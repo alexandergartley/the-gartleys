@@ -48,14 +48,9 @@ export function SiteHeader() {
       <PageShell className="py-5 md:flex md:items-center md:justify-between md:py-8">
         <div>
           <div className="flex items-start justify-between gap-4">
-            <div>
-              <Link href="/" className="font-serif text-2xl font-medium tracking-[0.02em]">
-                {siteConfig.name}
-              </Link>
-              <p className="mt-1.5 max-w-md text-sm leading-6 text-[var(--muted)]">
-                Songs from a family walking with Jesus through real life.
-              </p>
-            </div>
+            <Link href="/" className="font-serif text-2xl font-medium tracking-[0.02em]">
+              {siteConfig.name}
+            </Link>
             <button
               type="button"
               aria-controls={menuId}
