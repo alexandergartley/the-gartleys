@@ -9,8 +9,9 @@ import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 import { brandVoiceBlock } from "@/content/site";
 import { getJournalEntries } from "@/lib/journal";
-import { getFeaturedSongs, songs } from "@/content/songs";
+import { getFeaturedSongs, getSongBySlug, songs } from "@/content/songs";
 import { buildPageMetadata } from "@/lib/seo";
+import { formatDate } from "@/lib/utils";
 
 export const metadata = buildPageMetadata({
   title: "Home",
@@ -21,7 +22,7 @@ export const metadata = buildPageMetadata({
 
 export default async function HomePage() {
   const journalEntries = await getJournalEntries();
-  const featuredSong = getFeaturedSongs()[0] ?? songs[0];
+  const featuredSong = getSongBySlug("new-mountain") ?? getFeaturedSongs()[0] ?? songs[0];
 
   return (
     <PageShell className="pb-12 pt-0 sm:pb-20">
@@ -68,12 +69,9 @@ export default async function HomePage() {
           <MediaEmbed title={featuredSong.title} url={featuredSong.mediaEmbedUrl} />
           <div className="soft-panel rounded-[1.75rem] p-6 sm:p-8">
             <p className="text-sm font-medium text-[var(--muted)]">
-              Released March 19, 2026
+              Released {formatDate(featuredSong.releaseDate)}
             </p>
-            <p className="mt-4 text-base leading-8 text-[var(--muted)]">
-              A song of gratitude and freedom, responding to the grace of God poured out through
-              the cross and the new life we have in Jesus.
-            </p>
+            <p className="mt-4 text-base leading-8 text-[var(--muted)]">{featuredSong.summary}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={`/songs/${featuredSong.slug}`} className="button-primary">
                 Experience the song

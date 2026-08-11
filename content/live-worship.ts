@@ -1,6 +1,6 @@
 export const liveWorshipSeries = {
   title: "Live Worship Sessions",
-  cadence: "Monthly live worship",
+  cadence: "Live worship",
   description:
     "A growing series of one-hour worship sessions with originals, familiar songs, and spontaneous moments from the room.",
   playlistUrl:
