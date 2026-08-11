@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ThemePageProps): Promise<Meta
 
   return buildPageMetadata({
     title: `${theme.label} Songs`,
-    description: `Explore ${theme.label.toLowerCase()} songs with related Scriptures and reflections.`,
+    description: theme.intro,
     path: `/themes/${theme.slug}`
   });
 }
@@ -71,7 +71,11 @@ export default async function ThemePage({ params }: ThemePageProps) {
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li>Themes</li>
+          <li>
+            <Link href="/themes" className="transition-colors hover:text-[var(--foreground)]">
+              Themes
+            </Link>
+          </li>
           <li aria-hidden="true">/</li>
           <li aria-current="page" className="text-[var(--foreground)]">
             {theme.label}
