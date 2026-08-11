@@ -13,12 +13,19 @@ import { getFeaturedSongs, getSongBySlug, songs } from "@/content/songs";
 import { buildPageMetadata } from "@/lib/seo";
 import { formatDate } from "@/lib/utils";
 
-export const metadata = buildPageMetadata({
-  title: "Home",
-  description:
-    "Start with a featured song, your story, and journal reflections from The Gartleys' walk with the Lord.",
-  path: "/"
-});
+const homepageTitle = "The Gartleys | Worship, Songs, Stories & Life with Jesus";
+
+export const metadata = {
+  ...buildPageMetadata({
+    title: homepageTitle,
+    description:
+      "Start with a featured song, your story, and journal reflections from The Gartleys' walk with the Lord.",
+    path: "/"
+  }),
+  title: {
+    absolute: homepageTitle
+  }
+};
 
 export default async function HomePage() {
   const journalEntries = await getJournalEntries();
