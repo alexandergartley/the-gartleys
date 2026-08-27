@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { JournalCard } from "@/components/journal-card";
-import { FollowAlongForm } from "@/components/follow-along-form";
 import { LiveWorshipCallout } from "@/components/live-worship-callout";
 import { MediaEmbed } from "@/components/media-embed";
 import { PageShell } from "@/components/page-shell";
@@ -19,7 +18,7 @@ export const metadata = {
   ...buildPageMetadata({
     title: homepageTitle,
     description:
-      "Start with a featured song, your story, and journal reflections from The Gartleys' walk with the Lord.",
+      "Original worship songs, live worship sessions, and stories from The Gartleys' family journey with Jesus.",
     path: "/"
   }),
   title: {
@@ -126,12 +125,6 @@ export default async function HomePage() {
               />
             </div>
           </figure>
-        </div>
-      </section>
-
-      <section className="mt-20 sm:mt-24">
-        <div className="mx-auto max-w-[68rem]">
-          <FollowAlongForm variant="homepage" />
         </div>
       </section>
 

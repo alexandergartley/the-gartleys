@@ -43,6 +43,7 @@ export type Song = {
   anchorLine?: string;
   themeSlugs?: string[];
   releaseDate: string;
+  updatedAt?: string;
   coverImage?: NoteImage;
   mediaEmbedUrl?: string;
   mediaAudio?: {

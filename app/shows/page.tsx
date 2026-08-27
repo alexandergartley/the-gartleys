@@ -92,7 +92,7 @@ export default function ShowsPage() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Watch Live Video
+                      Watch Story + Song
                     </a>
                   </div>
                 </div>

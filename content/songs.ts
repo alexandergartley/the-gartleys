@@ -201,6 +201,7 @@ It’s Jesus, it’s Jesus`,
     anchorLine: "Anchored in John 6:35 and John 20:27.",
     themeSlugs: ["grace", "worship"],
     releaseDate: "2026-04-17",
+    updatedAt: "2026-08-26",
     coverImage: {
       src: "/covers/tear-the-loaf-v2.jpg",
       alt: "Tear the Loaf single artwork",
@@ -926,6 +927,7 @@ Jesus, take hold of me`,
     anchorLine: "Anchored in Hebrews 12:1-2.",
     themeSlugs: ["calling", "trust", "worship"],
     releaseDate: "2026-08-09",
+    updatedAt: "2026-08-26",
     coverImage: {
       src: "/covers/new-mountain.jpg",
       alt: "New Mountain single artwork",
@@ -1001,7 +1003,7 @@ To taste something sweet, something new, oh, yeah
 And You’re always worth it, we’ll risk it all over again
 To capture new visions from You, oh, yeah
 
-Oh, Jesus, were pressing in and pressing on, oh
+Oh, Jesus, we're pressing in and pressing on, oh
 
 Oh, we want the more, we want the new, oh
 

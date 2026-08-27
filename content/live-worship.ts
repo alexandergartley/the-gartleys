@@ -6,7 +6,7 @@ export const liveWorshipSeries = {
   playlistUrl:
     "https://youtube.com/playlist?list=PLhuLtu2X5kNbbzYPz7NkCR3IXkvOjCC8A&si=Prs0nOSuz0DuxOwQ",
   latestSession: {
-    title: "Latest live worship session",
+    title: "Build My Life + Spontaneous Acoustic Worship | Worship Session",
     embedUrl: "https://www.youtube-nocookie.com/embed/Job8rgOAyW0"
   }
 } as const;
