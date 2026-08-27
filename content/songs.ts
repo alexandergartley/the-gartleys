@@ -213,6 +213,25 @@ It’s Jesus, it’s Jesus`,
         href: "https://youtu.be/FkvbmQBzPME"
       }
     ],
+    alternateVersions: [
+      {
+        title: "Live at Agape Café",
+        embedTitle:
+          "Tear the Loaf (Live at Agape Café) | Original Worship Song",
+        description: "A song-only live performance recorded at Agape Café.",
+        href: "https://youtu.be/VsazSh0khPs",
+        embedUrl: "https://www.youtube-nocookie.com/embed/VsazSh0khPs"
+      },
+      {
+        title: "Story + Song — Live at Agape Café",
+        embedTitle:
+          "Tear the Loaf (Story + Song, Live at Agape Café) | Original Worship Song",
+        description:
+          "The story behind Tear the Loaf, followed by the live performance at Agape Café.",
+        href: "https://youtu.be/Hgdp5l_jchk",
+        embedUrl: "https://www.youtube-nocookie.com/embed/Hgdp5l_jchk"
+      }
+    ],
     lyrics: `Bread of life, come feed the nations
 Living water, flow
 It’s Your body, torn and broken
