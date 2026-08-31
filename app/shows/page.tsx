@@ -68,34 +68,72 @@ export default function ShowsPage() {
           <div className="mt-4 grid gap-5">
             {pastShows.map((show) => (
               <article key={`${show.date}-${show.title}`} className="soft-panel rounded-[2rem] p-6 sm:p-8">
-                <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-                  <div className="max-w-2xl">
-                    <h3 className="font-serif text-[clamp(1.75rem,3vw,2.35rem)] leading-[1.12]">
-                      {show.title}
-                    </h3>
-                    <p className="mt-3 text-base font-medium leading-7 text-[var(--foreground)] sm:text-lg">
-                      <time dateTime={show.date}>{show.displayDate}</time> &bull; {show.time}
-                    </p>
-                    <div className="mt-5 space-y-1 text-[1.02rem] leading-7 text-[var(--muted)]">
-                      <p className="font-medium text-[var(--foreground)]">{show.venue}</p>
-                      <p>{show.address}</p>
-                    </div>
-                    <p className="mt-5 max-w-[64ch] text-[1.05rem] leading-8 text-[var(--muted)]">
-                      {show.description}
-                    </p>
-                    <p className="mt-4 font-medium text-[var(--foreground)]">{show.cost}.</p>
+                <div className="max-w-2xl">
+                  <h3 className="font-serif text-[clamp(1.75rem,3vw,2.35rem)] leading-[1.12]">
+                    {show.title}
+                  </h3>
+                  <p className="mt-3 text-base font-medium leading-7 text-[var(--foreground)] sm:text-lg">
+                    <time dateTime={show.date}>{show.displayDate}</time> &bull; {show.time}
+                  </p>
+                  <div className="mt-5 space-y-1 text-[1.02rem] leading-7 text-[var(--muted)]">
+                    <p className="font-medium text-[var(--foreground)]">{show.venue}</p>
+                    <p>{show.address}</p>
                   </div>
-                  <div className="flex shrink-0 sm:pt-1">
-                    <a
-                      className="button-secondary"
-                      href={show.videoUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Watch Story + Song
-                    </a>
-                  </div>
+                  <p className="mt-5 max-w-[64ch] text-[1.05rem] leading-8 text-[var(--muted)]">
+                    {show.description}
+                  </p>
+                  <p className="mt-4 font-medium text-[var(--foreground)]">{show.cost}.</p>
                 </div>
+                <section
+                  aria-labelledby={`${show.date}-recordings-heading`}
+                  className="mt-8 border-t border-[var(--border)] pt-7"
+                >
+                  <h4 id={`${show.date}-recordings-heading`} className="section-eyebrow">
+                    Watch From This Event
+                  </h4>
+                  <div className="mt-4 grid gap-5 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
+                    <div>
+                      <h5 className="font-serif text-xl leading-snug sm:text-2xl">
+                        {show.recordings.fullEvent.title}
+                      </h5>
+                      <p className="mt-1 text-sm leading-6 text-[var(--muted)]">
+                        The complete Story + Song gathering at Agape Café.
+                      </p>
+                    </div>
+                    <div className="flex sm:justify-end">
+                      <a
+                        className="button-primary"
+                        href={show.recordings.fullEvent.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Watch the Full Event
+                      </a>
+                    </div>
+                  </div>
+                  <ul className="mt-6 divide-y divide-[var(--border)] border-y border-[var(--border)]">
+                    {show.recordings.storyAndSongs.map((recording) => (
+                      <li
+                        key={recording.url}
+                        className="grid gap-3 py-5 sm:grid-cols-[minmax(0,12rem)_minmax(0,1fr)_auto] sm:items-center sm:gap-5"
+                      >
+                        <h5 className="font-serif text-xl leading-snug">{recording.title}</h5>
+                        <p className="text-sm leading-6 text-[var(--muted)]">
+                          {recording.description}
+                        </p>
+                        <a
+                          className="w-fit text-sm font-medium underline decoration-[var(--border)] underline-offset-4 transition-colors hover:decoration-[var(--foreground)]"
+                          href={recording.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`Watch ${recording.title} Story + Song`}
+                        >
+                          Watch Story + Song
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               </article>
             ))}
           </div>
