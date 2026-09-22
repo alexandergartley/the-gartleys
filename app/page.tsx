@@ -28,7 +28,7 @@ export const metadata = {
 
 export default async function HomePage() {
   const journalEntries = await getJournalEntries();
-  const featuredSong = getSongBySlug("new-mountain") ?? getFeaturedSongs()[0] ?? songs[0];
+  const featuredSong = getSongBySlug("alive-in-the-river") ?? getFeaturedSongs()[0] ?? songs[0];
 
   return (
     <PageShell className="pb-12 pt-0 sm:pb-20">

@@ -2,6 +2,89 @@ import type { Song } from "@/lib/types";
 
 export const songs: Song[] = [
   {
+    title: "Alive in the River",
+    slug: "alive-in-the-river",
+    summary:
+      "A prayer to be planted by the Living Water — rooted in Jesus, growing in His love, and bearing the life only He can give.",
+    metaDescription:
+      "Alive in the River is an original worship song by The Gartleys about living water, abiding in Jesus, and bearing fruit through life rooted in Him.",
+    descriptor:
+      "A prayer to be planted by the Living Water, rooted deeply in Jesus, and made fruitful by His Spirit.",
+    anchorLine: "Anchored in Psalm 1:3.",
+    themeSlugs: ["trust", "worship"],
+    releaseDate: "2026-09-22",
+    coverImage: {
+      src: "/covers/alive-in-the-river.jpg",
+      alt: "Alive in the River cover art showing three children running into a river",
+      caption: "Single artwork"
+    },
+    mediaEmbedUrl: "https://www.youtube-nocookie.com/embed/zR7WKhM4xtM",
+    streamingLinks: [
+      {
+        label: "YouTube",
+        href: "https://youtu.be/zR7WKhM4xtM"
+      }
+    ],
+    alternateVersions: [
+      {
+        title: "Story + Song",
+        embedTitle: "Alive in the River (Story & Song) | Original Worship Song",
+        description:
+          "The story behind Alive in the River, followed by the song in a family recording from home.",
+        href: "https://youtu.be/uJpIdM_XLPo",
+        embedUrl: "https://www.youtube-nocookie.com/embed/uJpIdM_XLPo"
+      }
+    ],
+    lyrics: `Let us be like a tree
+Planted by the water, the Living Water
+In Your love, plant the seed
+Planted by the water, the Living Water
+
+Oh my love, come and see
+This is where you were made to be
+Planted by the river
+Planted by the river
+
+See the roots, strong and deep
+Drinking from the river, the mighty river
+So come and be, like a tree
+Come to the water, the Living Water
+
+Love do you see it? The water is the Spirit
+He bids you come and die, and again you’ll rise
+
+The born again will see
+I have plans for every tree
+For the healed will heal
+And set the captives free
+
+Alive in the river`,
+    aboutText:
+      "Alive in the River centers on the image of a tree planted by living water: asking Jesus to plant and sustain our lives in Him rather than trying to manufacture growth ourselves.",
+    storyText: [
+      "It is a prayer to abide in Jesus — rooted in His love, sustained by His Spirit, and made fruitful by the life only He can give."
+    ],
+    scriptureReferences: [
+      {
+        reference: "Psalm 1:3",
+        passage:
+          "He is like a tree planted by streams of water that yields its fruit in its season.",
+        reflection:
+          "This is the image at the heart of the song — a life planted, sustained, and made fruitful by God."
+      }
+    ],
+    timeline: [
+      {
+        label: "Release day",
+        date: "2026-09-22",
+        description:
+          "Recorded at home as a family recording and released on YouTube in song-only and story-and-song versions."
+      }
+    ],
+    reflectionText:
+      "Jesus, plant us near Your living water. Root us deeply in You, grow what You want to grow in us, and let our lives bear fruit that comes from abiding in You rather than striving on our own. Amen."
+  },
+  {
     title: "Just Depend on Me",
     slug: "just-depend-on-me",
     summary:
