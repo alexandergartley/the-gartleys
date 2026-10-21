@@ -5,6 +5,7 @@ import { PageShell } from "@/components/page-shell";
 import { SongPageSections } from "@/components/song/song-page-sections";
 import { getSongBySlug, songs } from "@/content/songs";
 import { buildPageMetadata } from "@/lib/seo";
+import { buildSongStructuredData } from "@/lib/song-structured-data";
 
 type SongPageProps = {
   params: Promise<{ slug: string }>;
@@ -42,6 +43,12 @@ export default async function SongPage({ params }: SongPageProps) {
 
   return (
     <PageShell className="pb-12 pt-0 sm:pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildSongStructuredData(song)).replace(/</g, "\\u003c")
+        }}
+      />
       <SongPageSections song={song} />
     </PageShell>
   );
