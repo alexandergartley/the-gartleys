@@ -15,14 +15,6 @@ if (portalOrigin) {
   nextConfig.redirects = async () => [
     { source: '/:path((?!visit(?:/|$)).+)/', destination: '/:path', permanent: true },
   ];
-  nextConfig.rewrites = async () => ({
-    beforeFiles: [
-      { source: '/visit', destination: portalOrigin + '/visit/' },
-      { source: '/visit/:path(.+)', destination: portalOrigin + '/visit/:path' },
-    ],
-    afterFiles: [],
-    fallback: [],
-  });
 }
 
 export default nextConfig;
